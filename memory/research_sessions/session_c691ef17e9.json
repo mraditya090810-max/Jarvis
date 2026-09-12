@@ -1,0 +1,14 @@
+{
+  "id": "session_c691ef17e9",
+  "query": "test query",
+  "status": "canceled",
+  "plan": null,
+  "sources": [],
+  "papers": [],
+  "images": [],
+  "notes": "",
+  "report": null,
+  "created_at": "2026-07-24T15:37:45+00:00",
+  "updated_at": "2026-07-24T15:37:45+00:00",
+  "error": "Cancellation requested by user."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "session_e938cb489b",
+  "query": "solar energy",
+  "status": "failed",
+  "plan": null,
+  "sources": [],
+  "papers": [],
+  "images": [],
+  "notes": "",
+  "report": null,
+  "created_at": "2026-07-24T15:24:01+00:00",
+  "updated_at": "2026-07-24T15:24:11+00:00",
+  "error": "Canceled by user."
+}

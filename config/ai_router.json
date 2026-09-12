@@ -1,0 +1,10 @@
+{
+    "provider_mode": "ollama_first",
+    "ollama_url": "",
+    "ollama_model": "qwen2.5:7b",
+
+    "model_refresh_hours": 24,
+    "request_timeout": 120,
+    "max_fallback_attempts": 0,
+    "cache_max_entries": 500
+}

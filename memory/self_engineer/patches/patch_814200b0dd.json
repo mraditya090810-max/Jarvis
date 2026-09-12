@@ -1,0 +1,22 @@
+{
+  "id": "patch_814200b0dd",
+  "weakness_id": "wk_cb5a9c1e9c",
+  "summary": "Failed to generate patch: Could not generate a patch for weakness wk_cb5a9c1e9c (broad_exception_log in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+  "problem": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+  "solution": "(no fix generated)",
+  "files": [],
+  "risk_level": "low",
+  "complexity": "trivial",
+  "expected_gain": "n/a",
+  "rollback_plan": "n/a",
+  "tests_added": [],
+  "diff_text": "",
+  "static_analysis_passed": null,
+  "tests_passed": null,
+  "benchmark": null,
+  "status": "rejected",
+  "created_at": "2026-07-21T14:49:49+00:00",
+  "applied_at": null,
+  "reject_reason": "User requested stop",
+  "security_notes": []
+}

@@ -1,0 +1,35 @@
+{
+  "next_id": 7,
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Cloud AI",
+      "added_at": "2026-09-12T11:33:28"
+    },
+    {
+      "id": 2,
+      "topic": "Anthropic AI",
+      "added_at": "2026-09-12T11:33:28"
+    },
+    {
+      "id": 3,
+      "topic": "ChatGPT versions",
+      "added_at": "2026-09-12T11:33:28"
+    },
+    {
+      "id": 4,
+      "topic": "AI news",
+      "added_at": "2026-09-12T11:33:28"
+    },
+    {
+      "id": 5,
+      "topic": "India",
+      "added_at": "2026-09-12T11:34:54"
+    },
+    {
+      "id": 6,
+      "topic": "India international meeting",
+      "added_at": "2026-09-12T12:53:42"
+    }
+  ]
+}

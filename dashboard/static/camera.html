@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>JARVIS — Live Camera</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #07090f;
+      --surface: rgba(255,255,255,0.04);
+      --border:  rgba(255,255,255,0.07);
+      --accent:  #6366f1;
+      --adim:    rgba(99,102,241,0.14);
+      --text:    #dde3ed;
+      --muted:   #5e6a7e;
+      --green:   #22c55e;
+      --red:     #f87171;
+    }
+    html, body {
+      height: 100%; background: #000; color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+    body { display: flex; flex-direction: column; }
+
+    header {
+      flex-shrink: 0; display: flex; align-items: center; gap: 10px;
+      padding: calc(env(safe-area-inset-top) + 10px) calc(env(safe-area-inset-right) + 14px) 10px calc(env(safe-area-inset-left) + 14px);
+      border-bottom: 1px solid var(--border);
+      background: rgba(7,9,15,0.95); z-index: 5;
+    }
+    button, a { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+    .back { color: var(--muted); text-decoration: none; font-size: 18px; padding: 2px 4px; }
+    .title { font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+    .spacer { flex: 1; }
+    .pill {
+      display: flex; align-items: center; gap: 6px; padding: 4px 10px;
+      border-radius: 99px; background: var(--surface); border: 1px solid var(--border);
+      font-size: 10px; font-weight: 700; letter-spacing: 1px; color: var(--muted);
+    }
+    .pill.on  { background: rgba(34,197,94,0.14); border-color: rgba(34,197,94,0.3); color: var(--green); }
+    .pill.off { background: rgba(248,113,113,0.1); border-color: rgba(248,113,113,0.25); color: var(--red); }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+
+    main {
+      flex: 1; position: relative; display: flex; align-items: center; justify-content: center;
+      background: #000; overflow: hidden;
+    }
+    #frame {
+      max-width: 100%; max-height: 100%; object-fit: contain;
+      transition: transform 0.2s ease; display: none;
+    }
+
+    #state {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 14px; text-align: center; padding: 24px;
+    }
+    .spinner {
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 3px solid var(--border); border-top-color: var(--accent);
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    #state h2 { font-size: 15px; font-weight: 700; letter-spacing: 0.5px; }
+    #state p  { font-size: 12px; color: var(--muted); max-width: 260px; line-height: 1.5; }
+    #state.err h2 { color: var(--red); }
+
+    .stats {
+      position: absolute; bottom: calc(env(safe-area-inset-bottom) + 14px); left: calc(env(safe-area-inset-left) + 14px);
+      display: flex; gap: 8px; z-index: 4;
+    }
+    .stat {
+      font-size: 10px; font-family: 'Courier New', monospace; font-weight: 700;
+      padding: 4px 9px; border-radius: 6px; background: rgba(0,0,0,0.55);
+      border: 1px solid var(--border); color: var(--text);
+    }
+
+    .controls {
+      position: absolute; bottom: calc(env(safe-area-inset-bottom) + 14px); right: calc(env(safe-area-inset-right) + 14px);
+      display: flex; gap: 8px; z-index: 4;
+    }
+    .ctrl-btn {
+      width: 38px; height: 38px; border-radius: 10px; background: rgba(0,0,0,0.55);
+      border: 1px solid var(--border); color: var(--text); font-size: 16px;
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+    }
+    .ctrl-btn:active { transform: scale(0.94); }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="/">‹</a>
+    <div class="title">Live Camera</div>
+    <div class="spacer"></div>
+    <div class="pill" id="pill"><span class="dot"></span><span id="pill-txt">Connecting</span></div>
+  </header>
+
+  <main>
+    <img id="frame" alt="Live camera">
+    <div id="state">
+      <div class="spinner" id="spinner"></div>
+      <h2 id="state-title">Connecting…</h2>
+      <p id="state-sub">Opening the laptop camera.</p>
+    </div>
+    <div class="stats" id="stats" style="display:none">
+      <div class="stat" id="stat-fps">-- FPS</div>
+      <div class="stat" id="stat-ping">-- ms</div>
+    </div>
+    <div class="controls" id="controls" style="display:none">
+      <button class="ctrl-btn" id="rotate-btn" title="Rotate">⟳</button>
+      <button class="ctrl-btn" id="full-btn" title="Fullscreen">⛶</button>
+    </div>
+  </main>
+
+  <script>
+    const _authToken = sessionStorage.getItem('jarvis_token');
+    if (!_authToken) location.replace('/login');
+
+    const img       = document.getElementById('frame');
+    const stateBox  = document.getElementById('state');
+    const stateTtl  = document.getElementById('state-title');
+    const stateSub  = document.getElementById('state-sub');
+    const spinner   = document.getElementById('spinner');
+    const pill      = document.getElementById('pill');
+    const pillTxt   = document.getElementById('pill-txt');
+    const stats     = document.getElementById('stats');
+    const controls  = document.getElementById('controls');
+    const fpsStat   = document.getElementById('stat-fps');
+    const pingStat  = document.getElementById('stat-ping');
+
+    let ws = null;
+    let reconnectTimer = null;
+    let reconnectDelay = 1000;
+    let intentionalClose = false;
+    let currentObjectUrl = null;
+
+    let frameCount = 0, fpsWindowStart = performance.now();
+    let pingTimer = null;
+
+    function showState(kind, title, sub) {
+      img.style.display = 'none';
+      stateBox.style.display = 'flex';
+      stateBox.className = kind === 'error' ? 'err' : '';
+      spinner.style.display = kind === 'loading' ? 'block' : 'none';
+      stateTtl.textContent = title;
+      stateSub.textContent = sub || '';
+      stats.style.display = 'none';
+      controls.style.display = 'none';
+    }
+
+    function showFrame() {
+      stateBox.style.display = 'none';
+      img.style.display = 'block';
+      stats.style.display = 'flex';
+      controls.style.display = 'flex';
+    }
+
+    function setPill(connected) {
+      pill.className = connected ? 'pill on' : 'pill off';
+      pillTxt.textContent = connected ? 'Connected to Jarvis' : 'Disconnected';
+    }
+
+    function connect() {
+      clearTimeout(reconnectTimer);
+      intentionalClose = false;
+      showState('loading', 'Connecting…', 'Opening the laptop camera.');
+      setPill(false);
+
+      const wsProto = location.protocol === 'https:' ? 'wss' : 'ws';
+      ws = new WebSocket(`${wsProto}://${location.host}/ws/camera?token=${encodeURIComponent(_authToken)}`);
+      ws.binaryType = 'arraybuffer';
+
+      ws.onopen = () => {
+        reconnectDelay = 1000;
+        setPill(true);
+        pingTimer = setInterval(() => {
+          if (ws && ws.readyState === 1) ws.send(JSON.stringify({ type: 'ping', t: performance.now() }));
+        }, 4000);
+      };
+
+      ws.onmessage = (e) => {
+        if (typeof e.data === 'string') {
+          let m;
+          try { m = JSON.parse(e.data); } catch { return; }
+          if (m.type === 'pong') {
+            const rtt = Math.round(performance.now() - m.t);
+            pingStat.textContent = `${rtt} ms`;
+          } else if (m.type === 'camera_error') {
+            showState('error', 'Camera Offline', m.error || 'The laptop camera is unavailable.');
+          } else if (m.type === 'camera_stopped') {
+            intentionalClose = true;
+            showState('error', 'Remote Access Stopped', 'The desktop ended this session.');
+          }
+          return;
+        }
+        // Binary JPEG frame
+        const blob = new Blob([e.data], { type: 'image/jpeg' });
+        const url = URL.createObjectURL(blob);
+        img.onload = () => { if (currentObjectUrl) URL.revokeObjectURL(currentObjectUrl); currentObjectUrl = url; };
+        img.src = url;
+        showFrame();
+
+        frameCount++;
+        const now = performance.now();
+        if (now - fpsWindowStart >= 1000) {
+          fpsStat.textContent = `${frameCount} FPS`;
+          frameCount = 0;
+          fpsWindowStart = now;
+        }
+      };
+
+      ws.onclose = () => {
+        setPill(false);
+        clearInterval(pingTimer);
+        if (intentionalClose) return;
+        showState('error', 'Camera Offline', 'Reconnecting…');
+        reconnectTimer = setTimeout(connect, reconnectDelay);
+        reconnectDelay = Math.min(reconnectDelay * 1.6, 10000);
+      };
+
+      ws.onerror = () => { try { ws.close(); } catch (_) {} };
+    }
+
+    connect();
+
+    // ── Controls ──────────────────────────────────────────────────────────────
+    let rotation = 0;
+    document.getElementById('rotate-btn').addEventListener('click', () => {
+      rotation = (rotation + 90) % 360;
+      img.style.transform = `rotate(${rotation}deg)`;
+    });
+
+    document.getElementById('full-btn').addEventListener('click', () => {
+      const el = document.documentElement;
+      if (!document.fullscreenElement) {
+        (el.requestFullscreen || el.webkitRequestFullscreen || function(){}).call(el);
+      } else {
+        (document.exitFullscreen || document.webkitExitFullscreen || function(){}).call(document);
+      }
+    });
+
+    // Stop cleanly when leaving the page — releases the camera if this was the only viewer.
+    window.addEventListener('pagehide', () => {
+      intentionalClose = true;
+      clearTimeout(reconnectTimer);
+      if (ws) { try { ws.close(); } catch (_) {} }
+    });
+  </script>
+</body>
+</html>

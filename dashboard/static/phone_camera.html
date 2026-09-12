@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>·</title>
+<style>
+  html, body {
+    margin: 0; padding: 0;
+    background: #000;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+    font-family: -apple-system, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+  /* Full-screen tap surface — required on iOS Safari to grant getUserMedia.
+     It disappears the moment the camera starts. */
+  #tap {
+    position: fixed; inset: 0;
+    background: #000;
+    color: #222;
+    border: none; outline: none;
+    width: 100%; height: 100%;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+  }
+  /* Bottom status line — fades to invisible after 2.5s. */
+  #status {
+    position: fixed;
+    bottom: max(10px, env(safe-area-inset-bottom));
+    left: 50%;
+    transform: translateX(-50%);
+    color: #1b1b1b;
+    font-size: 10px;
+    letter-spacing: 1px;
+    transition: opacity 1.2s ease;
+    pointer-events: none;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+<button id="tap">tap to start</button>
+<div id="status">· connecting ·</div>
+
+<script>
+/* Server injects these two placeholders when a valid one-time key is used. */
+window.__JARVIS_TOKEN__        = "__TOKEN__";
+window.__JARVIS_DEVICE_TOKEN__ = "__DEVICE_TOKEN__";
+</script>
+
+<script>
+(async function () {
+  const statusEl = document.getElementById('status');
+  const tapBtn   = document.getElementById('tap');
+
+  function say(text, fade) {
+    statusEl.textContent = text;
+    statusEl.style.opacity = '1';
+    if (fade) setTimeout(() => { statusEl.style.opacity = '0'; }, 2500);
+  }
+
+  /* ── 1. Resolve an auth token ──────────────────────────────────── */
+  let token = (window.__JARVIS_TOKEN__ || '').trim();
+
+  // Persist the device token so future visits auto-login
+  const dev = (window.__JARVIS_DEVICE_TOKEN__ || '').trim();
+  if (dev) {
+    try { localStorage.setItem('jarvis_device_token', dev); } catch (e) {}
+  }
+
+  if (!token) {
+    const stored = (() => {
+      try { return localStorage.getItem('jarvis_device_token') || ''; }
+      catch (e) { return ''; }
+    })();
+    if (stored) {
+      try {
+        const r = await fetch('/api/device-login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ device_token: stored })
+        });
+        if (r.ok) {
+          const j = await r.json();
+          token = (j.token || '').trim();
+        }
+      } catch (e) {}
+    }
+  }
+
+  if (!token) {
+    tapBtn.textContent = 'Scan the JARVIS QR code on your PC first.';
+    tapBtn.style.fontSize = '13px';
+    return;
+  }
+
+  /* ── 2. Wait for a tap (iOS requirement) ───────────────────────── */
+  await new Promise((res) => {
+    tapBtn.addEventListener('click', res, { once: true });
+  });
+
+  /* ── 3. Request the rear camera ────────────────────────────────── */
+  let stream;
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({
+      video: {
+        facingMode: { ideal: 'environment' },
+        width:  { ideal: 1280 },
+        height: { ideal: 720 },
+      },
+      audio: false,
+    });
+  } catch (err) {
+    tapBtn.style.display = 'block';
+    tapBtn.textContent = 'camera blocked: ' + (err.message || err.name);
+    return;
+  }
+
+  /* Camera is now on. Hide the tap surface — screen goes fully black. */
+  tapBtn.style.display = 'none';
+
+  /* ── 4. Screen Wake Lock (Android Chrome; harmless elsewhere) ──── */
+  let wakeLock = null;
+  async function ensureWakeLock() {
+    try {
+      if ('wakeLock' in navigator) {
+        wakeLock = await navigator.wakeLock.request('screen');
+        wakeLock.addEventListener('release', () => { wakeLock = null; });
+      }
+    } catch (e) {}
+  }
+  await ensureWakeLock();
+  document.addEventListener('visibilitychange', async () => {
+    if (document.visibilityState === 'visible') await ensureWakeLock();
+  });
+
+  /* ── 5. Offscreen video + canvas (never appended to the DOM) ───── */
+  const video = document.createElement('video');
+  video.playsInline = true;
+  video.muted = true;
+  video.autoplay = true;
+  video.srcObject = stream;
+  // NOTE: video is intentionally NOT appended to document.body.
+
+  await new Promise((res) => {
+    if (video.readyState >= 2) res();
+    else video.onloadeddata = () => res();
+  });
+  try { await video.play(); } catch (e) {}
+
+  const MAX_W = 960;                             // vision doesn't need more
+  const vw = video.videoWidth  || 640;
+  const vh = video.videoHeight || 480;
+  const scale = Math.min(1, MAX_W / vw);
+  const canvas = document.createElement('canvas');
+  canvas.width  = Math.round(vw * scale);
+  canvas.height = Math.round(vh * scale);
+  const ctx = canvas.getContext('2d', { alpha: false });
+
+  /* ── 6. WebSocket to the dashboard ─────────────────────────────── */
+  const proto = location.protocol === 'https:' ? 'wss:' : 'ws:';
+  const wsUrl = proto + '//' + location.host +
+                '/ws/phone-camera?token=' + encodeURIComponent(token);
+  let ws = null;
+
+  function connect() {
+    ws = new WebSocket(wsUrl);
+    ws.binaryType = 'arraybuffer';
+
+    ws.onopen = () => {
+      say('· streaming ·', true);
+      try {
+        ws.send(JSON.stringify({
+          type:   'hello',
+          width:  canvas.width,
+          height: canvas.height,
+        }));
+      } catch (e) {}
+      pump();
+    };
+
+    ws.onclose = () => {
+      say('reconnecting…');
+      setTimeout(connect, 2000);
+    };
+
+    ws.onerror = () => { /* onclose will handle it */ };
+  }
+
+  /* ── 7. Frame pump ─────────────────────────────────────────────── */
+  const TARGET_FPS = 6;
+  const INTERVAL_MS = 1000 / TARGET_FPS;
+  let lastSent = 0;
+  let busy = false;
+
+  async function pump() {
+    if (!ws || ws.readyState !== WebSocket.OPEN) return;
+    const now = performance.now();
+    if (now - lastSent < INTERVAL_MS) { requestAnimationFrame(pump); return; }
+    lastSent = now;
+
+    if (!busy && video.readyState >= 2) {
+      busy = true;
+      try {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const blob = await new Promise((res) =>
+          canvas.toBlob(res, 'image/jpeg', 0.7)
+        );
+        if (blob && ws.readyState === WebSocket.OPEN) {
+          const buf = await blob.arrayBuffer();
+          ws.send(buf);
+        }
+      } catch (e) { /* skip a bad frame */ }
+      finally { busy = false; }
+    }
+    requestAnimationFrame(pump);
+  }
+
+  connect();
+
+  /* Cleanly reconnect after the phone returns from background. */
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      if (!ws || ws.readyState === WebSocket.CLOSED) connect();
+    }
+  });
+})();
+</script>
+</body>
+</html>

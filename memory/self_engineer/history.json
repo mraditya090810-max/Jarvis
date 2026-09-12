@@ -1,0 +1,50 @@
+[
+  {
+    "ts": "2026-07-21T13:10:14+00:00",
+    "patch_id": "patch_a24b2c104e",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_6d17672a6f (large_function in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-21T13:12:21+00:00",
+    "patch_id": "patch_767b54d02d",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_c0db2085fd (broad_exception_log in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-21T14:49:49+00:00",
+    "patch_id": "patch_814200b0dd",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_cb5a9c1e9c (broad_exception_log in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-21T14:53:14+00:00",
+    "patch_id": "patch_0315f0e8ab",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_c637f2b3e1 (broad_exception_log in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-21T14:53:25+00:00",
+    "patch_id": "patch_814200b0dd",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_cb5a9c1e9c (broad_exception_log in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-23T14:21:48+00:00",
+    "patch_id": "patch_f91bb235a9",
+    "summary": "Fix long_file in main.py (lines 1-1752)",
+    "note": "status -> failed_tests"
+  },
+  {
+    "ts": "2026-07-23T14:25:10+00:00",
+    "patch_id": "patch_61b6fc9712",
+    "summary": "Failed to generate patch: Could not generate a patch for weakness wk_fc10416bcb (large_function in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+    "note": "status -> rejected"
+  },
+  {
+    "ts": "2026-07-23T14:39:07+00:00",
+    "patch_id": "patch_473b3fc155",
+    "summary": "Fix broad_exception_log in main.py (lines 90-95)",
+    "note": "status -> failed_tests"
+  }
+]

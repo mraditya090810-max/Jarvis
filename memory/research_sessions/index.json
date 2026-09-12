@@ -1,0 +1,83 @@
+[
+  {
+    "id": "session_869cbde688",
+    "query": "quantum computing",
+    "status": "extracting",
+    "created_at": "2026-07-24T14:51:06+00:00",
+    "updated_at": "2026-07-24T14:51:06+00:00",
+    "num_sources": 20,
+    "num_papers": 0
+  },
+  {
+    "id": "session_e7b8f6d3fd",
+    "query": "thunderstorm and lightning",
+    "status": "planning",
+    "created_at": "2026-07-24T15:06:51+00:00",
+    "updated_at": "2026-07-24T15:06:51+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_24e2bd81ea",
+    "query": "lightning and thunderstorm",
+    "status": "planning",
+    "created_at": "2026-07-24T15:07:50+00:00",
+    "updated_at": "2026-07-24T15:07:50+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_dd1f57629a",
+    "query": "thunderstorm",
+    "status": "planning",
+    "created_at": "2026-07-24T15:14:38+00:00",
+    "updated_at": "2026-07-24T15:14:38+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_18d4f170d9",
+    "query": "thunderstorm and lightning",
+    "status": "failed",
+    "created_at": "2026-07-24T15:18:26+00:00",
+    "updated_at": "2026-07-24T15:20:35+00:00",
+    "num_sources": 20,
+    "num_papers": 0
+  },
+  {
+    "id": "session_e938cb489b",
+    "query": "solar energy",
+    "status": "failed",
+    "created_at": "2026-07-24T15:24:01+00:00",
+    "updated_at": "2026-07-24T15:24:11+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_c691ef17e9",
+    "query": "test query",
+    "status": "canceled",
+    "created_at": "2026-07-24T15:37:45+00:00",
+    "updated_at": "2026-07-24T15:37:45+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_a65b1381be",
+    "query": "cloud",
+    "status": "canceled",
+    "created_at": "2026-07-24T15:39:53+00:00",
+    "updated_at": "2026-07-24T15:39:58+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  },
+  {
+    "id": "session_05870ad6d9",
+    "query": "cloud",
+    "status": "canceled",
+    "created_at": "2026-07-24T15:45:26+00:00",
+    "updated_at": "2026-07-24T15:45:28+00:00",
+    "num_sources": 0,
+    "num_papers": 0
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "patch_a24b2c104e",
+  "weakness_id": "wk_6d17672a6f",
+  "summary": "Failed to generate patch: Could not generate a patch for weakness wk_6d17672a6f (large_function in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+  "problem": "Function '_execute_tool' is 169 lines long (threshold 80). Consider extracting helpers.",
+  "solution": "(no fix generated)",
+  "files": [],
+  "risk_level": "low",
+  "complexity": "trivial",
+  "expected_gain": "n/a",
+  "rollback_plan": "n/a",
+  "tests_added": [],
+  "diff_text": "",
+  "static_analysis_passed": null,
+  "tests_passed": null,
+  "benchmark": null,
+  "status": "rejected",
+  "created_at": "2026-07-21T13:10:14+00:00",
+  "applied_at": null,
+  "reject_reason": "Could not generate a patch for weakness wk_6d17672a6f (large_function in main.py) \u2014 no free AI model reachable and no deterministic rule covers this category. Try again once \"openrouter_api_key\" is configured in config/api_keys.json.",
+  "security_notes": []
+}

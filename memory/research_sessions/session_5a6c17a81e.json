@@ -1,0 +1,781 @@
+{
+  "id": "session_5a6c17a81e",
+  "query": "how lightning forms and lightning related deaths in this year",
+  "status": "done",
+  "plan": {
+    "query": "how lightning forms and lightning related deaths in this year",
+    "depth": "deep",
+    "subtopics": [
+      {
+        "id": "sub_624831fce4",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year overview and background"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "sub_f6e7950d53",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year current state and recent developments"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "sub_80ec467def",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 advantages and limitations",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year advantages and limitations"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "sub_bcbed183e7",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 comparisons and alternatives",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year comparisons and alternatives"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "sub_1ab8c9a449",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 real-world applications",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year real-world applications"
+        ],
+        "source_ids": []
+      },
+      {
+        "id": "sub_5462a5728d",
+        "title": "how lightning forms and lightning related deaths in this year \u2014 future outlook and open problems",
+        "queries": [
+          "how lightning forms and lightning related deaths in this year future outlook and open problems"
+        ],
+        "source_ids": []
+      }
+    ],
+    "max_sources": 40,
+    "max_time_s": 900
+  },
+  "sources": [
+    {
+      "id": "src_3a1f8957ca",
+      "url": "http://arxiv.org/abs/2207.03769v2",
+      "title": "Laser-guided lightning",
+      "snippet": "Electric currents circulating between charged clouds and the earth surface during lightning discharges are responsible for considerable damages and casualties. It is therefore important to develop better protection methods in addition to the traditional Franklin rod. Here we present the first demonstration that filaments formed by short and intense laser pulses can guide lightning discharges over ",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "peer_reviewed",
+      "extracted_text": "[2207.03769v2] Laser-guided lightning Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Optics arXiv:2207.03769v2 (physics) [Submitted on 8 Jul 2022 ( v1 ), last revised 19 Jan 2023 (this version, v2)] Title: Laser-guided lightning Authors: Aur\u00e9lien Houard , Pierre Walch , Thomas Produit , Victor Moreno , Benoit Mahieu , Antonio Sunjerga , Clemens Herkommer , Amirhossein Mostajabi , Ugo Andral , Yves-Bernard Andr\u00e9 , Magali Lozano , Laurent Bizet , Malte C. Schroeder , Guillaume Schimmel , Michel Moret , Mark Stanley , W. A. Rison , Oliver Maurice , Bruno Esmiller , Knut Michel , Walter Haas , Thomas Metzger , Marcos Rubinstein , Farhad Rachidi , Vernon Cooray , Andr\u00e9 Mysyrowicz , J\u00e9r\u00f4me Kasparian , Jean-Pierre Wolf View a PDF of the paper titled Laser-guided lightning, by Aur\\'elien Houard and 27 other authors View PDF Abstract: Electric currents circulating between charged clouds and the earth surface during lightning discharges are responsible for considerable damages and casualties. It is therefore important to develop better protection methods in addition to the traditional Franklin rod. Here we present the first demonstration that filaments formed by short and intense laser pulses can guide lightning discharges over considerable distances. We believe that this experimental breakthrough will lead to progress in lightning protection and lightning physics. An experimental campaign was carried out on the S\u00e4ntis Mountain in Northeastern Switzerland during the Summer of 2021 with a high repetition rate terawatt laser. The guiding of an upward negative lightning leader over a distance of 50 m was recorded by two separate high-speed cameras. The guiding of negative lightning leaders by laser filaments was corroborated in three other instances by VHF interferometric measurements, and the number of X-ray bursts detected during guided lightning events was significantly increased. While this research field has been very active for more than 20 years with many research groups around the world working to achieve this goal, this result demonstrates lightning guiding by lasers, which may lead to the development of a laser lightning rod. This work paves the way for new atmospheric applications of ultrashort lasers and represents a significant step forward in the development of a laser based lightning protection for airports, launchpads or large infrastructures. Comments: Laser-guided lightning. Nat. Photon. (2023) Subjects: Optics (physics.optics) ; Atmospheric and Oceanic Physics (physics.ao-ph); Plasma Physics (physics.plasm-ph) Cite as: arXiv:2207.03769 [physics.optics] (or arXiv:2207.03769v2 [physics.optics] for this version) https://doi.org/10.48550/arXiv.2207.03769 Focus to learn more arXiv-issued DOI via DataCite Journal reference: Nature Photonics 17, 231 (2023) Related DOI : https://doi.org/10.1038/s41566-022-01139-z Focus to learn more DOI(s) linking to related resources Submission history From: Aur\u00e9lien Houard [ view email ] [v1] Fri, 8 Jul 2022 09:18:05 UTC (3,937 KB) [v2] Thu, 19 Jan 2023 15:50:00 UTC (3,936 KB) Full-text links: Access Paper: View a PDF of the paper titled Laser-guided lightning, by Aur\\'elien Houard and 27 other authors View PDF view license Current browse context: physics.optics < prev | next > new | recent | 2022-07 Change to browse by: physics physics.ao-ph physics.plasm-ph References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_852421383e",
+      "url": "http://arxiv.org/abs/1606.03285v2",
+      "title": "Lightning detection in planetary atmospheres",
+      "snippet": "Lightning in planetary atmospheres is now a well-established concept. Here we discuss the available detection techniques for, and observations of, planetary lightning by spacecraft, planetary landers and, increasingly, sophisticated terrestrial radio telescopes. Future space missions carrying lightning-related instrumentation are also summarised, specifically the European ExoMars mission and Japan",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "peer_reviewed",
+      "extracted_text": "[1606.03285v2] Lightning detection in planetary atmospheres Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Space Physics arXiv:1606.03285v2 (physics) [Submitted on 10 Jun 2016 ( v1 ), last revised 22 Aug 2016 (this version, v2)] Title: Lightning detection in planetary atmospheres Authors: Karen L Aplin , Georg Fischer View a PDF of the paper titled Lightning detection in planetary atmospheres, by Karen L Aplin and Georg Fischer View PDF Abstract: Lightning in planetary atmospheres is now a well-established concept. Here we discuss the available detection techniques for, and observations of, planetary lightning by spacecraft, planetary landers and, increasingly, sophisticated terrestrial radio telescopes. Future space missions carrying lightning-related instrumentation are also summarised, specifically the European ExoMars mission and Japanese Akatsuki mission to Venus, which could both yield lightning observations in 2016. Comments: Accepted for publication in Weather as part of a special issue on Advances in Lightning Detection Subjects: Space Physics (physics.space-ph) ; Atmospheric and Oceanic Physics (physics.ao-ph); Instrumentation and Detectors (physics.ins-det) Cite as: arXiv:1606.03285 [physics.space-ph] (or arXiv:1606.03285v2 [physics.space-ph] for this version) https://doi.org/10.48550/arXiv.1606.03285 Focus to learn more arXiv-issued DOI via DataCite Journal reference: Weather, 72, 2, 46-50 (2017) Related DOI : https://doi.org/10.1002/wea.2817 Focus to learn more DOI(s) linking to related resources Submission history From: Karen Aplin [ view email ] [v1] Fri, 10 Jun 2016 12:07:33 UTC (646 KB) [v2] Mon, 22 Aug 2016 09:28:44 UTC (734 KB) Full-text links: Access Paper: View a PDF of the paper titled Lightning detection in planetary atmospheres, by Karen L Aplin and Georg Fischer View PDF view license Current browse context: physics.space-ph < prev | next > new | recent | 2016-06 Change to browse by: physics physics.ao-ph physics.ins-det References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_ab216ff0e2",
+      "url": "http://arxiv.org/abs/1411.4784v2",
+      "title": "Theory of ball lightning",
+      "snippet": "We present a comprehensive theory on the formation of ball lightning, a luminous sphere sometimes observed after normal lightning. In a ball lightning event, a relativistic electron bunch can be produced by the stepped leader of lightning and coherently emit high-power microwave when striking the ground. The intense microwave ionizes the local air and evacuates the resulting plasma by its radiatio",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "peer_reviewed",
+      "extracted_text": "[1411.4784v2] Theory of ball lightning Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Plasma Physics arXiv:1411.4784v2 (physics) [Submitted on 18 Nov 2014 ( v1 ), last revised 21 Dec 2015 (this version, v2)] Title: Theory of ball lightning Authors: H.-C. Wu View a PDF of the paper titled Theory of ball lightning, by H.-C. Wu View PDF HTML (experimental) Abstract: We present a comprehensive theory on the formation of ball lightning, a luminous sphere sometimes observed after normal lightning. In a ball lightning event, a relativistic electron bunch can be produced by the stepped leader of lightning and coherently emit high-power microwave when striking the ground. The intense microwave ionizes the local air and evacuates the resulting plasma by its radiation pressure, thereby forming a spherical plasma cavity that traps the microwave. The theory can explain observed properties of ball lightning and should be useful to lightning protection and aviation safety. Comments: 5 pages, 3 figures, presented at the 1st International Symposium on Lightning and Storm-Related Phenomena (July 2-3, 2015) in Aurillac, France Subjects: Plasma Physics (physics.plasm-ph) ; Atmospheric and Oceanic Physics (physics.ao-ph); Geophysics (physics.geo-ph) Cite as: arXiv:1411.4784 [physics.plasm-ph] (or arXiv:1411.4784v2 [physics.plasm-ph] for this version) https://doi.org/10.48550/arXiv.1411.4784 Focus to learn more arXiv-issued DOI via DataCite Journal reference: Sci. Rep. 6, 28263 (2016) Related DOI : https://doi.org/10.1038/srep28263 Focus to learn more DOI(s) linking to related resources Submission history From: Hui-Chun Wu [ view email ] [v1] Tue, 18 Nov 2014 09:55:08 UTC (563 KB) [v2] Mon, 21 Dec 2015 04:42:25 UTC (646 KB) Full-text links: Access Paper: View a PDF of the paper titled Theory of ball lightning, by H.-C. Wu View PDF HTML (experimental) TeX Source view license Current browse context: physics.plasm-ph < prev | next > new | recent | 2014-11 Change to browse by: physics physics.ao-ph physics.geo-ph References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_9093111662",
+      "url": "http://arxiv.org/abs/1606.04421v1",
+      "title": "Analysis of Conditions favorable for Ball Lightning Creation",
+      "snippet": "This report uses a few well documented cases of Ball Lightning (or BL for short) observations to demonstrate a correlation between BL and positive lightning, especially strong positive lightning. This allows to draw conclusions and predictions about future BL observations and the pro- duction of these objects in the laboratory. Contrary to many current BL theories, these objects can be created wit",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "peer_reviewed",
+      "extracted_text": "[1606.04421v1] Analysis of Conditions favorable for Ball Lightning Creation Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Atmospheric and Oceanic Physics arXiv:1606.04421v1 (physics) [Submitted on 13 Jun 2016] Title: Analysis of Conditions favorable for Ball Lightning Creation Authors: H. Boerner View a PDF of the paper titled Analysis of Conditions favorable for Ball Lightning Creation, by H. Boerner View PDF HTML (experimental) Abstract: This report uses a few well documented cases of Ball Lightning (or BL for short) observations to demonstrate a correlation between BL and positive lightning, especially strong positive lightning. This allows to draw conclusions and predictions about future BL observations and the pro- duction of these objects in the laboratory. Contrary to many current BL theories, these objects can be created without direct contact to a lightning channel. Very high electric fields appear to be essential for the creation, together with the proper temporal structure of the field. So far no experiments have been performed along the ideas presented in this report. Comments: to be presented at the 33rd International Conference on Lightning Protection, September 2016, Estoril, Portugal Subjects: Atmospheric and Oceanic Physics (physics.ao-ph) Cite as: arXiv:1606.04421 [physics.ao-ph] (or arXiv:1606.04421v1 [physics.ao-ph] for this version) https://doi.org/10.48550/arXiv.1606.04421 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Herbert Boerner F [ view email ] [v1] Mon, 13 Jun 2016 14:13:59 UTC (12 KB) Full-text links: Access Paper: View a PDF of the paper titled Analysis of Conditions favorable for Ball Lightning Creation, by H. Boerner View PDF HTML (experimental) TeX Source view license Current browse context: physics.ao-ph < prev | next > new | recent | 2016-06 Change to browse by: physics References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_c0dac1db94",
+      "url": "http://arxiv.org/abs/0910.0783v1",
+      "title": "Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon",
+      "snippet": "The author (physicist)has observed the very strange,beautiful and frightening Lightning Ball (LB). He has never forgotten this phenomenon. During his working life he could not devote himself to the problem of LB-formation.Only two years ago as he has been reading different unbelievable models of LB-formation, he decided to work on this problem. By studying the literature and the crucial points of ",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "peer_reviewed",
+      "extracted_text": "[0910.0783v1] Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > General Physics arXiv:0910.0783v1 (physics) [Submitted on 5 Oct 2009] Title: Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon Authors: Domokos Tar View a PDF of the paper titled Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon, by Domokos Tar View PDF Abstract: The author (physicist)has observed the very strange,beautiful and frightening Lightning Ball (LB). He has never forgotten this phenomenon. During his working life he could not devote himself to the problem of this http URL two years ago as he has been reading different unbelievable models of LB-formation, he decided to work on this problem. By studying the literature and the crucial points of his observation the author succeeded in creating a completely new model of Lightning Ball(LB) and Ball Lightning(BL)-formation based on the symmetry breaking of the hydrodynamic vortex this http URL agrees fully with the observation and overcomes the shortcomings of current models of LB formation. This model provides answers to the questions: Why are LBs so rarely observed,why do BLs in rare cases have such a high energy and how can we generate LB in the laboratory? Moreover the author differentiates between LB and BL, the latter having a high energy and occuring in 5 % of the observations. Keywords: ball lightning, hydrodynamic vortex ring, symmetry breaking, electroluminescence, triboelectrification. Subjects: General Physics (physics.gen-ph) Cite as: arXiv:0910.0783 [physics.gen-ph] (or arXiv:0910.0783v1 [physics.gen-ph] for this version) https://doi.org/10.48550/arXiv.0910.0783 Focus to learn more arXiv-issued DOI via DataCite Journal reference: Proceedings of the 9-th International Symposium on Ball Lightning, Aug. 2006 Eindhoven Submission history From: Domokos Tar M.dgr. in physics [ view email ] [v1] Mon, 5 Oct 2009 14:54:26 UTC (259 KB) Full-text links: Access Paper: View a PDF of the paper titled Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon, by Domokos Tar View PDF view license Current browse context: physics.gen-ph < prev | next > new | recent | 2009-10 Change to browse by: physics References & Citations NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_544ed73597",
+      "url": "http://arxiv.org/abs/2202.12428v2",
+      "title": "A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature",
+      "snippet": "Recently, four remarkably straight very brief flashes of light were captured on video in Perth, Australia within 0.5s of one another. Straight lightning was recently identified as a prediction of macroscopic dark matter (macros) -- a broad class of alternative candidates to particle dark matter. A sufficiently large macro passing through the atmosphere producing a straight column ofplasma would pr",
+      "provider": "arxiv",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 comparisons and alternatives",
+      "tier": "peer_reviewed",
+      "extracted_text": "[2202.12428v2] A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Astrophysics > Astrophysics of Galaxies arXiv:2202.12428v2 (astro-ph) This paper has been withdrawn by Glenn D. Starkman [Submitted on 24 Feb 2022 ( v1 ), last revised 1 Mar 2022 (this version, v2)] Title: A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature Authors: Nathaniel Starkman , Glenn D. Starkman , Harrison Winch , Jagjit Singh Sidhu View a PDF of the paper titled A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature, by Nathaniel Starkman and 3 other authors No PDF available, click to view other formats Abstract: Recently, four remarkably straight very brief flashes of light were captured on video in Perth, Australia within 0.5s of one another. Straight lightning was recently identified as a prediction of macroscopic dark matter (macros) -- a broad class of alternative candidates to particle dark matter. A sufficiently large macro passing through the atmosphere producing a straight column ofplasma would produce fluorescence, or, under atmospheric conditions conducive to lightning, seeda very straight lightning strike visible to the naked eye. Other explanations are considered, but areproblematic. Comments: Withdrawn for consideration of a possible camera effect causing ordinary lightning to appear straight Subjects: Astrophysics of Galaxies (astro-ph.GA) ; Cosmology and Nongalactic Astrophysics (astro-ph.CO); High Energy Physics - Phenomenology (hep-ph) Cite as: arXiv:2202.12428 [astro-ph.GA] (or arXiv:2202.12428v2 [astro-ph.GA] for this version) https://doi.org/10.48550/arXiv.2202.12428 Focus to learn more arXiv-issued DOI via DataCite Submission history From: Glenn D. Starkman [ view email ] [v1] Thu, 24 Feb 2022 23:51:47 UTC (134 KB) [v2] Tue, 1 Mar 2022 17:45:37 UTC (1 KB) (withdrawn) Full-text links: Access Paper: View a PDF of the paper titled A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature, by Nathaniel Starkman and 3 other authors Withdrawn No license for this version due to withdrawn Current browse context: astro-ph.GA < prev | next > new | recent | 2022-02 Change to browse by: astro-ph astro-ph.CO hep-ph References & Citations INSPIRE HEP NASA ADS Google Scholar Semantic Scholar export BibTeX citation Loading... BibTeX formatted citation \u00d7 loading... Data provided by: Bookmark Bibliographic Tools Bibliographic and Citation Tools Bibliographic Explorer Toggle Bibliographic Explorer ( What is the Explorer? ) Connected Papers Toggle Connected Papers ( What is Connected Papers? ) Litmaps Toggle Litmaps ( What is Litmaps? ) scite.ai Toggle scite Smart Citations ( What are Smart Citations? ) Code, Data, Media Code, Data and Media Associated with this Article alphaXiv Toggle alphaXiv ( What is alphaXiv? ) Links to Code Toggle CatalyzeX Code Finder for Papers ( What is CatalyzeX? ) DagsHub Toggle DagsHub ( What is DagsHub? ) GotitPub Toggle Gotit.pub ( What is GotitPub? ) Huggingface Toggle Hugging Face ( What is Huggingface? ) ScienceCast Toggle ScienceCast ( What is ScienceCast? ) Demos Demos Replicate Toggle Replicate ( What is Replicate? ) Spaces Toggle Hugging Face Spaces ( What is Spaces? ) Spaces Toggle TXYZ.AI ( What is TXYZ.AI? ) Related Papers Recommenders and Search Tools Link to Influence Flower Influence Flower ( What are Influence Flowers? ) Core recommender toggle CORE Recommender ( What is CORE? ) IArxiv recommender toggle IArxiv Recommender ( What is IArxiv? ) Author Venue Institution Topic About arXivLabs arXivLabs: experimental projects with community collaborators arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs . Which authors of this paper are endorsers? | Disable MathJax ( What is MathJax? )",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_6b12053f09",
+      "url": "https://www.weather.gov/safety/lightning-fatalities",
+      "title": "National Weather Service Lightning Fatalities in 2026: 14",
+      "snippet": "Apr 15, 2026 \u00b7 Statistics and graphics courtesy of John Jensenius (National Lightning Safety Council). This data is preliminary and does not necessarily represent all fatalities to date.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+      "tier": "community",
+      "extracted_text": "National Weather Service Lightning Fatalities in 2026: 14 HOME FORECAST Local Graphical Aviation Marine Rivers and Lakes Hurricanes Severe Weather Fire Weather Sunrise/Sunset Long Range Forecasts Climate Prediction Space Weather PAST WEATHER Past Weather Astronomical Data Certified Weather Data SAFETY INFORMATION Wireless Emergency Alerts Weather-Ready Nation Brochures Cooperative Observers Daily Briefing Damage/Fatality/Injury Statistics Forecast Models GIS Data Portal NOAA Weather Radio Publications SKYWARN Storm Spotters StormReady TsunamiReady Service Change Notices EDUCATION NEWS SEARCH Search For NWS All NOAA ABOUT About NWS Organization For NWS Employees National Centers Careers Contact Us Glossary Social Media NWS Transformation Safety National Program National Weather Service Lightning Fatalities in 2026: 14 Weather.gov > Safety > National Weather Service Lightning Fatalities in 2026: 14 Last Updated: 6/30/2026. This page is updated when new information is received and reviewed for completeness. Statistics and graphics courtesy of John Jensenius (National Lightning Safety Council). This data is preliminary and does not necessarily represent all fatalities to date. No. Date Day ST City/County Age Sex Location Activity 1 4-15-2026 Wednesday WI Pewaukee 41 M Gas station parking lot Walking to vehicle 2 5-31-2026 Sunday FL Santa Rosa County 18 M River Kayaking 3 7-03-2026 Friday FL Fort Myers Beach 51 M Beach In water 4 7-03-2026 Friday IL Serena 8 F Back yard Playing 5 7-18-2026 Saturday UT American Forks Twin Peaks 59 M Near summit Hiking 6 7-25-2026 Saturday NC Wrightsville Beach 23 F Beach Walking 7 7-26-2026 Saturday CO Mt. Blue Sky 15 M Near summit Hiking 8 7-27-2026 Monday WI Whitewater 31 M In tree Trimming trees 9 7-28-2026 Tuesday NJ Monroe Township 32 M Field Unknown 10 8-20-2026 Thursday VA Cape Charles 41 M Beach Sitting 11 8-23-2026 Sunday FL Margate 31 F Sidewalk Unknown 12 8-23-2026 Sunday FL Margate 2 F Sidewalk With mother (above) 13 8-26-2026 Saturday FL Fort DeSoto 41 M Water Jet skiing 14 9-04-2026 Friday OH Steubenville 60s M Home Cutting lawn Lightning Fatalities 2026 by State (Direct Fatalities Only) State Gender Age* Day Of Week* By Month WI 2 M 10 (71%) 0-9 2 (14%) Sun 4 (29%) 26 25 24 23 22 21 20 19 18 17 16 10 Yr Avg FL 5 F 4 (29%) 10-19 2 (14%) Mon 1 (07%) Jan 0 0 0 0 0 0 0 0 0 0 0 0 IL 1 20-29 1 (07%) Tue 1 (07%) Feb 0 0 0 0 0 0 0 0 1 0 0 0 UT 1 30-39 3 (21%) Wed 1 (07%) Mar 0 0 1 0 0 0 0 0 0 0 2 0 CO 1 40-49 3 (21%) Thu 1 (07%) Apr 1 2 0 3 0 0 0 0 1 0 4 1 NJ 1 50-59 2 (14%) Fri 3 (21%) May 1 0 3 3 0 0 4 1 2 2 1 2 NC 1 60-69 1 (07%) Sat 3 (21%) Jun 0 7 4 1 2 2 2 7 5 2 4 4 VA 1 70-79 0 (00%) Jul 7 5 3 1 7 4 8 6 7 7 12 6 OH 1 80-89 0 (00%) Aug 4 1 2 4 7 4 2 5 2 3 13 4 Sep 1 5 1 1 4 1 1 3 2 2 3 2 Oct - 1 0 0 0 0 0 0 1 0 0 0 Nov - 0 0 0 0 0 0 0 0 0 0 0 Dec - 0 0 0 0 0 0 0 0 0 0 0 Year 14 21 14 14 20 11 17 22 21 16 40 20** *Due to rounding, percentages may not add up to 100 percent. ** Note : Data are considered preliminary. Refer to Storm Data for official data. Note: Monthly averages are based on a 10-year average from 2016 to 2025. Due to rounding, the sum of the monthly averages may not equal the yearly average. U.S. Lightning Fatalities 2016-2026 Female Male 0 10 20 30 40 2026 4 10 14 2025 3 18 21 2024 2 12 14 2023 3 11 14 2022 4 16 20 2021 1 10 11 2020 4 13 17 2019 5 17 22 2018 4 17 21 2017 1 15 16 2016 9 31 40 40 Total Females 170 Total Males Fatality statistics for past years Source: National Lightning Safety Council US Dept of Commerce National Oceanic and Atmospheric Administration National Weather Service Safety 1325 East West Highway Silver Spring, MD 20910 Comments? Questions? Please Contact Us. Disclaimer Information Quality Help Glossary Privacy Policy Freedom of Information Act (FOIA) About Us Career Opportunities",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_cbf9c8f3ad",
+      "url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "title": "Lightning Deaths Surge in India - GKToday",
+      "snippet": "Aug 13, 2025 \u00b7 Between April and July alone, over 1,600 people died due to lightning and rain-related incidents. This rise is linked to changing climate patterns and expanding lightning zones across the country. Lightning now poses a growing threat not only in rural but also urban areas.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+      "tier": "community",
+      "extracted_text": "Lightning Deaths Surge in India \u2013 GKToday Current Affairs Daily MCQs \ud83d\udcdd Daily Current Affairs Quiz Monthly MCQs Current Affairs Quiz \u2013 September 2026 Current Affairs Quiz \u2013 August 2026 Current Affairs Quiz \u2013 July 2026 \ud83d\udcc1 Previous Months Quiz - 2017 - 2026 Topic Wise CA MCQs \ud83c\udf0d India Current Affairs MCQs \ud83c\udfdb Government Schemes MCQs \ud83d\udcbc Business, Economy & Banking MCQs \ud83d\ude80 Defence MCQs \ud83d\udcc8 Reports and Indices MCQs \ud83c\udf3f Environment & Biodiversity MCQs \ud83c\udfc6 Awards, Honours & Persons MCQs \ud83d\udccd Places in News MCQs \ud83c\udf89 Important Days and Events MCQs \ud83c\udfc0 Sports Current Affairs MCQs \ud83d\udd2c Science & Technology MCQs \ud83c\udfa4 Summits and Conferences in MCQs \ud83c\udf10 International MCQs \ud83d\uddbc Art & Culture MCQs CA MCQs in Other Languages \ud83d\udcdd \u0939\u093f\u0928\u094d\u0926\u0940 \u0915\u0930\u0947\u0902\u091f \u0905\u092b\u0947\u092f\u0930\u094d\u0938 \ud83d\udcdd \u0caa\u0ccd\u0cb0\u0c9a\u0cb2\u0cbf\u0ca4 \u0cb5\u0cbf\u0ca6\u0ccd\u0caf\u0cae\u0cbe\u0ca8\u0c97\u0cb3\u0cc1 \ud83d\udcdd \u092e\u0930\u093e\u0920\u0940 \u091a\u093e\u0932\u0942 \u0918\u0921\u093e\u092e\u094b\u0921\u0940 \ud83d\udcdd \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41\u0c32\u0c4b \u0c15\u0c30\u0c46\u0c02\u0c1f\u0c4d \u0c05\u0c2b\u0c48\u0c30\u0c4d\u0c38\u0c4d \ud83d\udcdd \u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0 \u0a95\u0ab0\u0a82\u0a9f \u0a85\u0aab\u0ac7\u0ab0\u0acd\u0ab8 2026-27 States PSC \ud83c\udf3e Andhra Pradesh \ud83e\udd9c Arunachal Pradesh \ud83d\udef6 Assam \ud83e\uddf1 Bihar \ud83c\udf0b Chhattisgarh \ud83c\udf0a Goa \ud83e\uddf5 Gujarat \ud83d\udee4\ufe0f Haryana \ud83c\udfde\ufe0f Himachal Pradesh \u2744\ufe0f J&K \u2692\ufe0f Jharkhand \ud83e\ude95 Karnataka \ud83c\udf34 Kerala \ud83c\udf27\ufe0f Meghalaya \ud83c\udff9 Madhya Pradesh \ud83d\ude8b Maharashtra \ud83e\udd41 Manipur \ud83e\udde3 Mizoram \ud83e\ude93 Nagaland \ud83d\udc18 Odisha \ud83e\ude99 Punjab \ud83c\udfdc\ufe0f Rajasthan \ud83e\udded Sikkim \ud83c\udfad Tamil Nadu \ud83d\udcdc Telangana \ud83c\udf33 Tripura \ud83c\udfef Uttar Pradesh \u26f0\ufe0f Uttarakhand \ud83c\udfa8 West Bengal GK MCQs Section SSC/RRB/States Level MCQs \ud83d\udcdc Ancient Indian History \ud83d\udde1\ufe0f Medieval Indian History \ud83c\udfdb\ufe0f Modern Indian History \ud83d\uddfa\ufe0f Indian Geography \ud83c\udf0f World Geography \u2696\ufe0f Indian Polity & Constitution \ud83d\udc3e Environment & Biodiversity \ud83d\udd49\ufe0f Indian Art & Culture \ud83c\udfc6 Sports GK \ud83d\udcb0 Indian Economy \ud83d\udd2c General Science \ud83e\uddec General Science - Biology \ud83d\udca1 General Science - Physics \ud83e\uddea General Science - Chemistry \ud83d\uddff World History \u270d\ufe0f Books & Authors \ud83d\udd0d All GK Questions Categories Home Lightning Deaths Surge in India Lightning Deaths Surge in India August 13, 2025 Current Affairs Today - Latest Current Affairs - 2026-2027 The year 2025 has seen a sharp increase in lightning-related deaths in India. Between April and July alone, over 1,600 people died due to lightning and rain-related incidents. This rise is linked to changing climate patterns and expanding lightning zones across the country. Lightning now poses a growing threat not only in rural but also urban areas. Rising Fatalities and Historical Data Lightning kills more people annually in India than any other extreme weather event. From 1967 to 2020, over 101,000 deaths were recorded due to lightning. Nearly half of all weather-related deaths between 2002 and 2024 were caused by lightning. The World Meteorological Organisation reported about 1,300 deaths in 2024 alone. The eastern states bear the brunt, especially during the monsoon sowing season. Climate Change and Expanding Lightning Zones Climate change is intensifying conditions favourable for lightning. Rising temperatures increase humidity by 7% per degree Celsius, creating more thunderstorms. Scientific studies estimate a 10-12% increase in lightning activity per degree of warming. Regions previously less affected, including central, northern, and coastal India, now experience more strikes. Madhya Pradesh and Rajasthan have emerged as new hotspots, overtaking traditional lightning-prone areas. Urban Impact and Emerging Risks Lightning strikes are increasingly frequent in urban centres. Cities face risks from the urban heat island effect, which raises temperatures and promotes thunderstorm formation. Air pollution and rapid urbanisation worsen storm intensity and flooding. Delhi has witnessed severe lightning events causing structural damage and flight disruptions. Urban electromagnetic infrastructure may also increase lightning vulnerability. Forecasting Advances and Implementation Challenges The India Meteorological Department (IMD) has improved lightning forecasts to 86% accuracy. Alerts now include five-day potential area warnings and real-time updates every three hours. However, lightning\u2019s sudden nature makes evacuation difficult. Delays in alert dissemination reduce effectiveness. States like Odisha have declared lightning a disaster, but national recognition is pending. The government has launched mitigation projects in 50 districts across 10 states. Mitigation Efforts Efforts include planting protective palm trees, installing smart poles with warning systems, and mapping high-risk zones. Mobile apps and WhatsApp groups provide real-time alerts to local safety coordinators. Outreach campaigns focus on behavioural change and preparedness. Experts stress the need for last-mile connectivity to ensure warnings reach vulnerable populations. The SthanKala-Patra approach aims to link scientific forecasts with timely community action. Category: Environment & Biodiversity Current Affairs Related UNESCO Recognises Bhagavad Gita and Natyashastra EU Fines Apple and Meta for DMA Violations The Resistance Front Revised Economic Capital Framework of the Reserve Bank India-Pakistan Military Hotline Aircraft Carriers Leave a Reply Cancel reply Your email address will not be published. Required fields are marked * Comment * Name * Email * \u0394 Hello Guest | Sign in \ud83d\udd0d PDF E-books All PDF E-books PDF Cart My PDFs Monthly Top 200 MCQs English English-Hindi English-Kannada English-Marathi English-Gujarati English-Telugu UPSC Current GS Current General Studies [Prelims] Other PDF Categories Current Affairs 1 Year PDF Compilations Current Affairs MCQs PDF Fortnightly Current Affairs PDF E-Books Monthly Current Affairs Articles PDF [Date Wise] Monthly Current Affairs Articles PDF [Topic Wise] Previous Page Next Page \u00a9 2009 - 2026 GKToday | About Us | Our Privacy Policy | Index | \ud83d\udcf1 GKToday Android App",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_6afe73b0cd",
+      "url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "title": "4 lightning deaths were reported across the U.S. in recent ...",
+      "snippet": "Jul 30, 2026 \u00b7 At least four U.S. residents have been killed by lightning in recent days, underscoring the risks that these sudden, giant sparks of static electricity can pose \u2014 especially in the month of...",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+      "tier": "community",
+      "extracted_text": "4 lightning deaths were reported across the U.S. in recent days. What are the odds you'll get struck in your lifetime, and how can you minimize the risk? Advertisement Advertisement Return to Homepage Top Stories: 25 years after 9/11 Trump's $5,000 gambit GOP midterm convention Iran damages U.S. warplanes Apple iPhone Duo review Amazon cargo plane crash Clancy's ex-husband threatens legal action Brent oil crosses $100 9/11 documents on Ground Zero air quality Meta stock surges Lightning strikes near the Executive Office Building in Washington, D.C. (ANDREW CABALLERO-REYNOLDS via Getty Images) At least four U.S. residents have been killed by lightning in recent days, underscoring the risks that these sudden, giant sparks of static electricity can pose \u2014 especially in the month of July. On Sunday, 15-year-old Levi Strobel was killed by a lightning strike as he attempted to shield his younger brother at the summit of Mt. Blue Sky in Colorado, according to the Clear Creek County Sheriff's Office . Two men who were hiking with the boys suffered minor injuries; Levi's brother was airlifted to a Denver-area hospital. \"In his final moments, Levi showed the courage and selflessness that characterized his life, seeking to protect his younger brother, who was with him on the mountain,\" Levi's family said in a statement. \"He was a brave and loving brother, and we will always remember the devotion he showed to those he loved.\" Advertisement Advertisement Advertisement Advertisement The following day, a 29-year-old man died by a suspected lightning strike while trimming trees in Whitewater, Wis. The supervisor of his trimming crew reported a \"loud bang and a flash\"; first responders found the victim suspended 60 feet above the ground. He was pronounced dead at the scene. And on Tuesday, emergency workers and police were summoned to a solar field in Monroe, N.J., where they found a lifeless 32-year-old man who is also believed to have been killed by lightning . These incidents follow recent death of Craig Nelson, 59, as he ascended toward the highest peak in Salt Lake County, Utah, amid worsening weather. His brother told investigators that he had already turned back when he \"saw Nelson suddenly collapse about 20 feet away from him and believed he had been struck by lightning,\" according to Fox News . Although lightning strikes are relatively uncommon, it's important to know what to do if you're caught outside during a storm this summer. Here's how to stay safe. Why are there so many lightning strikes (and deaths) right now? The first cause is seasonal. Lightning can occur at any time of year, but since it's typically associated with thunderstorms \u2014 and thunderstorms tend to occur when the air is warm, humid and unstable \u2014 the phenomenon is most prevalent during the spring and summer months, especially across the mid-Atlantic and Sunbelt regions of the U.S. According to the Centers for Disease Control and Prevention, Florida is considered the \"lightning capital\" of the country. Of course, people have to be around lightning to get hurt by it, and the risk is highest when they're outside (where about two-thirds of lightning injuries take place). The combination of these two factors \u2014 weather patterns and outdoor activity \u2014 makes July by far the deadliest month for lightning strikes, according to the CDC, with 163 recorded during that month from 2006 through 2025 . June (113 deaths) and August (94 deaths) are a distant second and third, respectively. (The National Lightning Safety Council provides the CDC with much of its data.) Advertisement Advertisement The other dynamic at play could be climate change. In 2014, researchers at the University of California, Berkeley, found that every time the planet warms by 1\u00b0C, the number of annual lightning strikes is expected to increase by 12%. So \"for every two lightning strikes you had at the beginning of the century, we will have three at the end of the century,\" one of the researchers explained at the time. Lightning fatalities in developing countries have been rising in recent years, likely as a result. What are the odds of getting struck by lightning in your lifetime? Low, but not zero. In 2019, the National Weather Service added the average number of annual U.S. lightning deaths over the previous decade (27) to the average number of annual lightning injuries (243) and calculated that each individual American has a 1 in 1.2 million chance of getting struck by lightning in any particular year \u2014 and a 1 in 15,300 chance of getting hit at some point during their life. Among the factors that can indicate an increased risk, according to the CDC : gender (males are four times more likely than females to be struck by lightning); age (the average age of a person struck by lightning is 37); time of day (two out of three lightning deaths occur between noon and 6 p.m.); recreation (from 2006 through 2025, leisure activities such as fishing, boating, playing sports and relaxing at the beach accounted for almost two-thirds of lightning deaths); and occupation (work-related activities contribute to about 20% of total lightning fatalities, with farmers and ranchers at highest risk). Almost 90% of all lightning strike victims survive, though, so even if a bolt does hit you, chances are you won't die. What happens to your body if you get struck by lightning? Getting struck by lightning delivers a massive electrical pulse to the body. That can short-circuit the heart and stop it from beating. When people die from lightning, they're actually dying from cardiac arrest. Advertisement Advertisement Lightning strike survivors typically experience a variety of short- and even long-term symptoms. Burns can affect skin and sometimes internal tissues \u2014 though brief heat exposure (lightning only lasts a fraction of a millisecond) can limit the damage. Eardrums may be ruptured. Cataracts often develop, sometimes as much as a year later. The nervous system can be affected as well, with victims reporting headache, nausea, stomach upset and other post-concussion types of symptoms; mild confusion, memory slowness or mental clouding; even dizziness and loss of balance. Longer term, survivors can have trouble with mental processing; some may experience personality change or depression. How to avoid getting hit by lightning About 37 million lightning strikes reach the ground each year in the U.S. To avoid getting hit, shelter in a substantial building or hard-topped vehicle with the windows rolled up at the first sign of a thunderstorm, and remain there until the storm has passed. Rain shelters, small sheds, balconies and porches are not safe. Don't use rain as your guide; lightning can strike 10 miles ahead of a storm and linger after a downpour has ended. Remain inside for 30 minutes after the last rumble of thunder. If you can't get inside, do whatever you can to avoid tall structures (rooftops, scaffolding, utility poles, ladders, trees, large equipment) and conductive materials (metal, utility lines, water, water pipes, plumbing). Advertisement Advertisement And even if you can get inside, make sure to avoid metal, wiring and plumbing as well. When lightning strikes a home or building, it often follows the wiring or plumbing to ground. Don't touch anything that's plugged into an outlet or connected to outside doors or windows. Finally, if someone you know is unfortunate enough to get struck by lightning, call 911 immediately, monitor the victim in the meantime and use CPR if necessary. Lightning survivors do not carry an electrical charge, so they are safe to touch. Charts by Mike Bebernes Advertisement About Our Ads About Our Ads Advertisement Advertisement Recommended articles Saudi Arabia shuts key oil pipeline after drone attack launched from Iraq The East-West pipeline has helped the country - the world's largest crude oil exporter - bypass closures in the Strait of Hormuz. BBC Corruption probe targets Brazil presidential candidate Flavio Bolsonaro Revelations that Brazilian presidential candidate Flavio Bolsonaro is under investigation for alleged corruption and money laundering rocked his right-wing campaign Friday, weeks before elections.The film is completely legal,\" Flavio Bolsonaro said at a campaign event on Friday. AFP BRICS leaders meet in India as wars and US tensions test the bloc Leaders of the BRICS nations were meeting in New Delhi on Saturday for a summit focused on trade, investment and global conflicts, as the bloc seeks a bigger role in shaping the global agenda for emerging and developing countries. Indian Prime Minister Narendra Modi is hosting Russian President Vladimir Putin, Chinese President Xi Jinping, Iranian President Masoud Pezeshkian and counterparts from the other eight BRICS members. Associated Press Trump to arrive in Ireland for two-day visit Donald Trump is to arrive later on Saturday at Dublin Airport for a two-day visit to the country. BBC Philippine Muslim enclave trades bullets for election ballots On a basketball court in the Philippines' Marawi, ballots piled high on pallets awaited transport to towns across a Muslim-majority region that has traded decades of separatist violence for a chance at self-determination.Following an on-off peace process that began in the late 1990s, the Bangsamoro Autonomous Region in Muslim Mindanao (BARMM) heads to its first polls on Monday, trading appointed parliamentarians for elected ones. AFP 'Military jet tripped chaos' and 'A failure for dying people' Several of the papers consider on the fall of the assisted dying bill in the House of Commons on Friday. BBC From 'blue wave' heroes to early exits: What happened to the 2018 House Democrats Eight years ago, a blue wave swept dozens of Democrats into Congress, making them heroes of the resistance to President Donald Trump. It's been a decidedly mixed bag since then for the 42 Democrats who flipped Republican-held seats in 2018 to reclaim control of the U.S. House. Others who tried to climb the ladder found themselves out of step with a Democratic base uninterested in the compromises once viewed as necessary to win in conservative-leaning areas. Associated Press Trump will meet with Ireland's leaders before heading to his golf club in Doonbeg President Donald Trump is arriving Saturday in Dublin, where he'll hold talks with Ireland's president and prime minister, kicking off a weekend visit that's more about a major golf tournament held on a course he owns on the country's Atlantic coast. The American president is set for separate meetings in Dublin with Irish President Catherine Connolly and Prime Minister Miche\u00e1l Martin. Trump also plans remarks to U.S. and Irish business leaders at the U.S. ambassador's official residence in Dublin before traveling to his oceanfront golf club in Doonbeg on the other side of the country to watch the Irish Open, which wraps up Sunday. Associated Press \u2018A f***-up of epic proportions\u2019: Blame game begins after Iran-backed Houthis\u2019 lightning advance down Red Sea coast Desperate pleas for air cover from Yemeni generals started coming mid-morning on Thursday. As the Houthis advanced, backup support from Saudi Arabia was nowhere in sight. CNN Gen. Dan Caine reflects on responding to 9/11: \"No doubt\" nation was at war Now the chairman of the Joint Chiefs of Staff, Gen. Dan Caine was a young fighter pilot mobilized in the response on Sept. 11, 2001. CBS News For the US news industry, a tough summer draws to a close with McClatchy chain's cuts Closing out a turbulent summer for the news industry, the McClatchy newspaper chain has made deep cuts at The Miami Herald and other papers it owns across the nation. The union that represents McClatchy journalists said Friday that more than 90 unionized journalists and media workers across 17 publications had been laid off, accounting for about 30 percent of all McClatchy workers unionized with The NewsGuild-CWA. The layoffs have impacted news outlets including The Sacramento Bee, The Kansas City Star, The Charlotte Observer, Fort Worth Star-Telegram and others. Associated Press 9/11 25th anniversary live updates: Families gather for emotional ceremonies Ceremonies were held Friday in New York City, Virginia and Pennsylvania. Good Morning America 9/11 25th anniversary live updates: Families gather for emotional ceremonies Ceremonies were held Friday in New York City, Virginia and Pennsylvania. ABC News Trump criticizes Smithsonian's focus on oppression By Kanishka Singh WASHINGTON, Sept 11 (Reuters) - President Donald Trump criticized what he called the Smithsonian's overwhelming focus on oppression on Friday and called for a five-year exhibition on Reuters GOP and Democratic officials in Nashville unite over renaming airport for Dolly Parton In Nashville, Tennessee, the Republican-dominated state government and Democrat-controlled city government are engaged in an ugly battle for control of the city\u2019s airport. CNN Largest US outbreak of explosive diarrhoea parasite is over, officials say More than 12,000 cases of cyclosporiasis, including two deaths, were linked to imported lettuce. BBC Grammy-winning rapper Lil Durk acquitted in murder-for-hire trial By Steve Gorman LOS ANGELES, Sept 11 (Reuters) - Grammy-winning rap artist Lil Durk was acquitted on Friday of all charges in a federal murder-for-hire case accusing him of orchestrating the revenge Reuters Charity founder says he secretly gave FTX fraud figure Caroline Ellison a job \"I believe in redemption,\" Manifund CEO Austin Chen said of hiring Caroline Ellison Business Insider Factbox-India-China relations, from conflict to cautious thaw NEW DELHI, Sept 12 (Reuters) - Indian Prime Minister Narendra Modi and Chinese President Xi Jinping will hold talks on Saturday on the sidelines of the BRICS summit in New Delhi. Reuters King Oyo, once world's youngest monarch, to be buried in western Uganda By Elias Biryabarema KAMPALA, Sept 12 (Reuters) - The late Ugandan monarch, Oyo Nyimba, who made global headlines in 1995 when he took the throne of the Tooro Kingdom at age 3, was due to be buried on Reuters Advertisement Advertisement News Today's news US Politics World Weather Tech Science Originals Newsletters Games Life Health Parenting Horoscopes Shopping Food Travel Autos Gift ideas Buying guides Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Finance My portfolio News Markets Research Community Personal finance Videos AlphaSpace Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM Show all New on Yahoo Yahoo Scout Creators Climate change Local Editions US US English US y LATAM Espa\u00f1ol Australia English Canada English Canada Fran\u00e7ais Deutschland Deutsch France Fran\u00e7ais \u9999\u6e2f \u7e41\u4e2d Malaysia English New Zealand English Singapore English \u53f0\u7063 \u7e41\u4e2d UK English News Today's news US Politics World Weather Tech Science Originals Newsletters Games Life Health Parenting Horoscopes Shopping Food Travel Autos Gift ideas Buying guides Entertainment Celebrity TV Movies Music How to Watch Interviews Videos Nonfiction Hotlist Finance My portfolio News Markets Research Community Personal finance Videos AlphaSpace Sports World Cup Fantasy Football 2026 Fantasy NFL NFL Odds NBA MLB NHL College football College basketball Soccer Sports Betting Yahoo Sports AM New on Yahoo Yahoo Scout Creators Climate change Local Selected edition US English US English US y LATAM Espa\u00f1ol Australia English Canada English Canada Fran\u00e7ais Deutschland Deutsch France Fran\u00e7ais \u9999\u6e2f \u7e41\u4e2d Malaysia English New Zealand English Singapore English \u53f0\u7063 \u7e41\u4e2d UK English View comments",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_e059c5f413",
+      "url": "https://www.facebook.com/LightningSafetyCouncil/posts/summary-of-2025-lightning-deathsduring-2025-there-were-a-total-of-21-known-light/906668885373600/",
+      "title": "National Lightning Safety Council - Facebook",
+      "snippet": "Jan 4, 2026 \u00b7 Florida led the nation with 4 fatalities followed by North Carolina, Oklahoma, Georgia, New Jersey, and Colorado, each with 2 fatalities. The remaining lightning deaths occurred in Mississippi, Texas, Missouri, Ohio, Wisconsin, Louisiana, and Puerto Rico. Ages of the victims ranged from 17 to 68.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+      "tier": "community",
+      "extracted_text": "Summary of 2025... - National Lightning Safety Council",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_a5869c377c",
+      "url": "https://www.usatoday.com/story/news/nation/2025/10/01/september-lightning-strike-deaths-match-a-grim-milestone/86364764007/",
+      "title": "September 2025 lightning strike deaths match a grim milestone",
+      "snippet": "Oct 1, 2025 \u00b7 Three men were struck and killed by lightning on a single day in September. The lightning death toll for the year now stands at 19. The nation matched a grim record for lightning strike...",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+      "tier": "community",
+      "extracted_text": "",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_59e8a16d1e",
+      "url": "https://www.cdc.gov/lightning/data-research/index.html",
+      "title": "Lightning Strike Victim Data | Lightning | CDC",
+      "snippet": "Jul 10, 2026 \u00b7 From 2006 through 2025, there were 517 lightning-related deaths in the United States. Males are four times more likely than females to be struck by lightning. The average age of a person struck by lightning is 37 years.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "community",
+      "extracted_text": "Lightning Strike Victim Data | Lightning | CDC Skip directly to site content Skip directly to search An official website of the United States government Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Lightning Strike Victim Data For Everyone July 10, 2026 At a glance About 37 million lightning strikes hit the ground in the United States each year. But the odds of being struck by lightning each year are less than one in a million, and almost 90% of all lightning strike victims survive. The odds of being struck multiple times is even less, with the record being seven times in one lifetime. There are some factors that can put you at greater risk of being struck, such as participating in outdoor recreational activities, living in regions with frequent thunderstorms, or working outside. Regional and seasonal differences can also affect your risk of being struck by lightning. Lightning strike injuries and deaths vary by region Lightning affects all regions in the United States, but risk varies by region. The Southeastern states experience the highest frequency of lightning strikes. Lightning generally decreases from the southeast to the northwest, except for a few places, such as the Rocky Mountains, where thunderstorms occur regularly during the summer. States with the highest numbers of lightning-related injuries and deaths include Florida, Texas, Colorado, North Carolina, Alabama, Georgia, New Jersey, Arizona, Missouri, and Pennsylvania. Florida has long been considered the \"lightning capital\" of the country, recording more than 2,000 lightning injuries over the past 50 years. Since 2006, only five states (Alaska, Delaware, Hawaii, New Hampshire, and Washington), as well as the U.S. Virgin Islands and the Commonwealth of the Northern Mariana Islands, have reported no lightning deaths. Quick facts From 2006 through 2025, there were 517 lightning-related deaths in the United States. Males are four times more likely than females to be struck by lightning. The average age of a person struck by lightning is 37 years. Lightning injuries can occur indoors when lightning travels through plumbing, electrical systems, metal wires or reinforcing bars in concrete walls or floors, or through wired devices. Lightning deaths are most common in the summer Lightning deaths can occur at any time of the year, but most deaths occur during the summer months, particularly in July. Did you know? Lightning deaths often occur on weekends, particularly Saturdays, and in the afternoon. In fact, two out of three lightning deaths occur between noon and 6 p.m. Participating in certain activities increases the risk of being struck by lightning Lightning most often strikes people who engage in outdoor recreational activities or work outside. From 2006 through 2025, leisure activities such as fishing, boating, playing golf, and walking outside accounted for nearly two-thirds of lightning deaths. Work-related activities contributed to about 20% of total lightning fatalities, with the highest risk being among those who work in construction, farming, or ranching. Most work-related lightning fatalities are among males. Keep Reading Lightning and Worker Safety Recommendations On This Page Lightning strike injuries and deaths vary by region Lightning deaths are most common in the summer Participating in certain activities increases the risk of being struck by lightning July 10, 2026 Sources Print Share Facebook LinkedIn Twitter Syndicate Content Source: National Center for Environmental Health Lightning You can protect yourself and your loved ones if you know what to do when you see lightning or when you hear thunder as a warning. View All About Lightning Lightning Frequently Asked Questions About Lightning Lightning Strike Victim Data Sign up for Email Updates",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_2306c98fc2",
+      "url": "https://www.masslive.com/weather/2025/10/lightning-deaths-rise-in-2025-how-this-year-compares-to-the-past.html",
+      "title": "Lightning deaths rise in 2025: How this year compares to the ...",
+      "snippet": "Oct 6, 2025 \u00b7 Not everyone who is struck by lightning is killed. About 90% of people struck by lightning are left with various degrees of disability, according to the National Weather Service.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "community",
+      "extracted_text": "",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_76f2fab10e",
+      "url": "http://lightningsafetycouncil.org/LSC-Lightning-Fatalities.html",
+      "title": "Lightning Deaths | National Lightning Safety Council",
+      "snippet": "The following links provide information on U.S. lightning fatalities during recent years.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+      "tier": "community",
+      "extracted_text": "\u00ef\u00bb\u00bf Lightning Deaths | National Lightning Safety Council National Lightning Safety Council Lightning Safety Council Home Lightning Science Personal Safety Sports and Recreational Activities Medical Information Lightning Protection U.S. Lightning Fatalities Lightning Safety Awareness Week Resources Recursos FAQs About/Meet the Lightning Safety Council Our Partners U.S. Lightning Fatalities The following links provide information on U.S. lightning fatalities during recent years. Links to Listings Of Fatalities By Year 2006 - 49 fatalities 2007 - 47 fatalities 2008 - 29 fatalities 2009 - 35 fatalities 2010 - 29 fatalities 2011 - 26 fatalities 2012 - 29 fatalities 2013 - 23 fatalities 2014 - 26 fatalities 2015 - 28 fatalities 2016 - 40 fatalities 2017 - 16 fatalities 2018 - 21 fatalities 2019 - 22 fatalities 2020 - 17 fatalities 2021 - 11 fatalities 2022 - 20 fatalities 2023 - 14 fatalities 2024 - 14 fatalities 2025 - 21 fatalities 2026 - 15 fatalities Links to Maps And Tables Of Fatalities 2016-2025 State Fatality Map 2016-2025 State Fatality Table 2016-2025 State Fatality Rank Map 2016-2025 State Fatality Rank Table 2001-2025 Lightning Fatalities Graphs The Odds of Being Struck The Deadly Dozen Average Fatalities by Day of Year Most Recent Fatality by State State Fatality Lists Activity Fatality Lists Links to Fatalities Map, Graphs, and Demographics Paper 2006-2025 Lightning Fatalities Map 2006-2025 Lightning Fatalities Graphics 2006-2025 Lightning Fatalities Analysis",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_49fdad4c02",
+      "url": "http://lightningsafetycouncil.org/Documents/A+Detailed+Analysis+Of+Lightning+Deaths+in+the+United+States+From+2006+through+2025.pdf",
+      "title": "A Detailed Analysis of Lightning Deaths in the United States ...",
+      "snippet": "The information in these databases is used to study lightning-related fatalities in order to understand how these deaths are occurring and to help find ways to help reduce the number of lightning casualties.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 comparisons and alternatives",
+      "tier": "community",
+      "extracted_text": "",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_9d92321b8f",
+      "url": "https://link.springer.com/article/10.1007/s11069-025-07594-5",
+      "title": "Geospatial analysis of lightning-related deaths in a single ...",
+      "snippet": "Aug 26, 2025 \u00b7 District-wise lightning strikes and fatalities were analyzed alongside meteorological conditions to identify high-risk zones. The number of lightning fatalities on that day was obtained from a report published in Times of India.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 real-world applications",
+      "tier": "community",
+      "extracted_text": "",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_94f5f7170f",
+      "url": "https://www.cdc.gov/disasters/lightning/victimdata.html",
+      "title": "Lightning Strike Victim Data | Lightning | CDC",
+      "snippet": "Jul 10, 2026 \u00b7 But the odds of being struck by lightning each year are less than one in a million, and almost 90% of all lightning strike victims survive. The odds of being struck multiple times is even less, with the record being seven times in one lifetime.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 real-world applications",
+      "tier": "community",
+      "extracted_text": "Lightning Strike Victim Data | Lightning | CDC Skip directly to site content Skip directly to search An official website of the United States government Here's how you know Official websites use .gov A .gov website belongs to an official government organization in the United States. Secure .gov websites use HTTPS A lock ( ) or https:// means you've safely connected to the .gov website. Share sensitive information only on official, secure websites. Lightning Strike Victim Data For Everyone July 10, 2026 At a glance About 37 million lightning strikes hit the ground in the United States each year. But the odds of being struck by lightning each year are less than one in a million, and almost 90% of all lightning strike victims survive. The odds of being struck multiple times is even less, with the record being seven times in one lifetime. There are some factors that can put you at greater risk of being struck, such as participating in outdoor recreational activities, living in regions with frequent thunderstorms, or working outside. Regional and seasonal differences can also affect your risk of being struck by lightning. Lightning strike injuries and deaths vary by region Lightning affects all regions in the United States, but risk varies by region. The Southeastern states experience the highest frequency of lightning strikes. Lightning generally decreases from the southeast to the northwest, except for a few places, such as the Rocky Mountains, where thunderstorms occur regularly during the summer. States with the highest numbers of lightning-related injuries and deaths include Florida, Texas, Colorado, North Carolina, Alabama, Georgia, New Jersey, Arizona, Missouri, and Pennsylvania. Florida has long been considered the \"lightning capital\" of the country, recording more than 2,000 lightning injuries over the past 50 years. Since 2006, only five states (Alaska, Delaware, Hawaii, New Hampshire, and Washington), as well as the U.S. Virgin Islands and the Commonwealth of the Northern Mariana Islands, have reported no lightning deaths. Quick facts From 2006 through 2025, there were 517 lightning-related deaths in the United States. Males are four times more likely than females to be struck by lightning. The average age of a person struck by lightning is 37 years. Lightning injuries can occur indoors when lightning travels through plumbing, electrical systems, metal wires or reinforcing bars in concrete walls or floors, or through wired devices. Lightning deaths are most common in the summer Lightning deaths can occur at any time of the year, but most deaths occur during the summer months, particularly in July. Did you know? Lightning deaths often occur on weekends, particularly Saturdays, and in the afternoon. In fact, two out of three lightning deaths occur between noon and 6 p.m. Participating in certain activities increases the risk of being struck by lightning Lightning most often strikes people who engage in outdoor recreational activities or work outside. From 2006 through 2025, leisure activities such as fishing, boating, playing golf, and walking outside accounted for nearly two-thirds of lightning deaths. Work-related activities contributed to about 20% of total lightning fatalities, with the highest risk being among those who work in construction, farming, or ranching. Most work-related lightning fatalities are among males. Keep Reading Lightning and Worker Safety Recommendations On This Page Lightning strike injuries and deaths vary by region Lightning deaths are most common in the summer Participating in certain activities increases the risk of being struck by lightning July 10, 2026 Sources Print Share Facebook LinkedIn Twitter Syndicate Content Source: National Center for Environmental Health Lightning You can protect yourself and your loved ones if you know what to do when you see lightning or when you hear thunder as a warning. View All About Lightning Lightning Frequently Asked Questions About Lightning Lightning Strike Victim Data Sign up for Email Updates",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_f78f362d43",
+      "url": "https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721",
+      "title": "Lightning strikes kill thousands globally each year, but for ...",
+      "snippet": "Aug 10, 2026 \u00b7 It's difficult to track lightning injuries and deaths accurately across Africa, due to a variety of factors including lack of internet access, civil unrest and language barriers.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 real-world applications",
+      "tier": "community",
+      "extracted_text": "Lightning strikes kill thousands globally each year, but for those who survive, the storm is far from over Skip to content Survivors of lightning strikes often struggle to find physicians who know how to treat them. Rakesh Bakshi/AFP via Getty Images https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721 https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721 Link copied Share article Share article Copy link Email Bluesky Facebook WhatsApp Messenger LinkedIn X (Twitter) Print article Every year, an estimated 6,000 to 24,000 people are killed by lightning across the world, and many more are injured. Obviously, there is a wide range in these numbers, and that\u2019s due to the fact that these estimates are built on limited and incomplete information. I\u2019m a lightning researcher at the University of North Dakota. I study both the physics of lightning and its impact on people. The physics is the same no matter where you are, but the impacts can be very different depending on where you live. Research on the health effects of lightning strikes is sparse even in the U.S., but in Central Africa \u2013 one of the most lightning-active regions on Earth \u2013 researchers like me know almost nothing about who is being struck and what happens to them. That\u2019s why I\u2019ve spent the past 10 years working with the African Centres for Lightning and Education Network , a nonprofit organization that works to reduce deaths, injuries and property damage from lightning across Africa, to build the largest publicly available database on lightning casualties on the continent. Central Africa\u2019s unique circumstances Our team began collecting data for the database in January 2018, covering 46 of the 54 countries in Africa. As of June 2026, it had over 2,100 entries. I\u2019ve been using this information to better understand when, where and why these deaths and injuries happen. Many lightning incidents go unreported, especially in the Global South, where there may be poor internet accessibility, civil unrest or cultural beliefs that attribute lightning strikes to supernatural forces. Then there\u2019s the language barrier: On the African continent alone, at least 75 languages each are spoken by more than a million people, and hundreds more are spoken by smaller populations. This makes it difficult to track news reports of lightning strikes around the world even where they are available. Africa experiences an average of 2 million to 4 million lightning strikes annually . Near the equator, the Congo Basin , receives intense solar heating year-round. Water vapor from the Congo rainforest , the world\u2019s second-largest rain forest after the Amazon, constantly fuels warm and moist air from the Gulf of Guinea . The Adamawa Plateau and Cameroon Highlands force that air upward, creating some of the most electrically active thunderstorms on Earth. Map created using Vaisala's GLD360 data from 2016-2025 by Daile Zhang at the University of North Dakota , CC BY Exposure and vulnerability But the frequency of lightning alone in this region doesn\u2019t explain the high number of injuries and deaths from strikes in Africa. The real story is also about exposure and vulnerability. To understand where lightning poses the greatest threat, our team created a way to measure and compare risk across countries. We assigned a score to each country based on three things: how many lightning strikes occur there, known as \u201chazard\u201d; how many people are injured or killed relative to the population, or \u201cexposure\u201d; and how vulnerable the population is, based on gross domestic product per capita, according to the World Bank . We then calculate an overall risk score by multiplying those scores together. Of the 15 African countries where my team and I have enough data to calculate risk, 14 fall in either high or very high lightning risk categories. The only exception is South Africa, where the lightning hazard is moderate, vulnerability is low, and a strong lightning research team has helped drive safety improvements. The higher number of reported lightning incidents in South Africa is due to the fact that the country has better reporting systems, wider media coverage and a predominantly English-speaking population, which makes incidents easier to document and share. In soon-to-be published research from our team, we found that 87% of the lightning fatality incidents in Africa involved more than one victim, compared to fewer than 10% in developed countries . Mass casualty incidents have been consistently reported in Uganda. This stands in sharp contrast to developed countries. In the U.S., the National Lightning Safety Council reports that 517 people died from lightning between 2006 and 2025. From historical data, it is estimated that more than 90% of those struck by lightning survived. In Canada, researchers estimate that nine to 10 people die and 92 to 164 are injured from lightning strikes each year. These high survival numbers are likely due to the fact that most people have access to lightning-safe buildings and vehicles and can reach emergency care quickly. But in Africa, we\u2019ve found that about half of the lightning incidents occur indoors. The National Lightning Safety Council slogan, \u201cWhen thunder roars, go indoors,\u201d simply doesn\u2019t apply, because most of the buildings, including schools, homes, churches and marketplaces, are not lightning safe. A lightning-safe building requires a properly designed and maintained protection system that meets international standards . Many buildings in Africa have no protection at all, while others rely on a single, often poorly maintained arrester that may not meet international standards and is not designed to protect an entire building. Beyond statistics In addition to gathering data about lightning strikes, our team also interviews survivors to learn more about the health effects of being struck by lightning. One woman we spoke with, a nurse, recalls that she was vaccinating children at a primary school when she was struck by lightning with such force that she was thrown through a classroom window. Her clothes caught fire, and she lost consciousness immediately. She was in the hospital for four days and still suffers from chronic pain, partial paralysis in her legs and memory loss. Before the strike, she was a healthy and active nurse. Now, she struggles to walk and had to leave her job. She works at a friend\u2019s clinic when she can, but there are days the pain is too severe to go to work. Sadly, in another incident 10 years later, 18 children were killed and 38 injured by a lightning strike in the very same classroom where she had been struck. The building had no lightning protection system at the time of either strike. In 2016, African Centres for Lightning and Education Network installed a lightning protection system . Lightning strike survivors can experience a range of symptoms, from memory loss to hearing problems to nerve damage. Survivors often struggle to find a doctor who believes their symptoms are real. A challenging diagnosis This nurse\u2019s story is unfortunately not unique among lightning survivors, who often face major health challenges for the rest of their lives. To others, they may seem lucky. But surviving a lightning strike is often the beginning of a long and lonely medical journey. More than two-thirds of lightning strike survivors in the U.S. do not have visible scars, according to surveys from the U.S.-based nonprofit Lightning Strike & Electric Shock Survivors International . But they often develop lasting, invisible conditions , such as brain injury, chronic pain, swelling, memory loss, tinnitus and difficulty concentrating, with symptoms varying widely from person to person. Many face huge medical bills, disabilities that prevent them from returning to work and result in lost income, and even personality changes that strain their personal relationships. Children who are injured often develop learning disabilities as a result of brain injury caused by the lightning strike, affecting their memory, concentration and ability to keep up in school. And yet, when they go to the doctor, they often encounter skepticism. Because there are rarely visible scars, many survivors are told their symptoms are psychological or, worse, imaginary. And survivors in both Africa and the U.S. report that even if they find a doctor who believes them, very few physicians are trained in treating lightning injury. All of this can take a heavy toll on survivors\u2019 mental health. After surviving a traumatic event, survivors often face a double blow: Even their own doctor doesn\u2019t believe them or know how to help them. One lightning strike survivor founded Lightning Strike & Electric Shock Survivors International in order to offer support and resources for survivors and their families. Many survivors told me they consider the organization\u2019s semiannual conferences to be a lifeline. In parts of Africa where even basic medical care is hard to come by, people suffering from lightning injury also face a lack of competent care. As my colleagues and I move ahead with our research in Africa, we hope that collecting more data about survivors will inform education both for the public on lightning safety and for doctors on treating lightning injury. It also reminds us that whether in the U.S. or in Africa, survival is not the end. Lightning only lasts a fraction of a second, but the aftermath can last a lifetime. Chronic diseases Africa Lightning Congo Health disparities Congo basin lightning deaths TC global health Daile Zhang , University of North Dakota Author Daile Zhang Assistant Professor of Atmospheric Sciences, University of North Dakota Disclosure statement Daile Zhang is affiliated with African Centres for Lightning Education Network. She serves as the Board of Directors. Daile Zhang attended lightning survivors group meetings organized by Lightning Strike & Electric Shock Survivors International, a 501(c)3 nonprofit, as part of the reporting for this article. The author has no financial or organizational affiliation with the group. Partners University of North Dakota provides funding as a member of The Conversation US. View all partners Languages Portuguese English DOI https://doi.org/10.64628/AAI.jhgt6ey79 Events More events \u200b \u200b \u200b \u200b",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_a113c90213",
+      "url": "https://www.weather.gov/safety/lightning-fatalities25",
+      "title": "National Weather Service Lightning Fatalities in 2025: 20",
+      "snippet": "Jul 31, 2025 \u00b7 Statistics and graphics courtesy of John Jensenius (National Lightning Safety Council). This data is preliminary and does not necessarily represent all fatalities to date.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 future outlook and open problems",
+      "tier": "community",
+      "extracted_text": "National Weather Service Lightning Fatalities in 2025: 20 HOME FORECAST Local Graphical Aviation Marine Rivers and Lakes Hurricanes Severe Weather Fire Weather Sunrise/Sunset Long Range Forecasts Climate Prediction Space Weather PAST WEATHER Past Weather Astronomical Data Certified Weather Data SAFETY INFORMATION Wireless Emergency Alerts Weather-Ready Nation Brochures Cooperative Observers Daily Briefing Damage/Fatality/Injury Statistics Forecast Models GIS Data Portal NOAA Weather Radio Publications SKYWARN Storm Spotters StormReady TsunamiReady Service Change Notices EDUCATION NEWS SEARCH Search For NWS All NOAA ABOUT About NWS Organization For NWS Employees National Centers Careers Contact Us Glossary Social Media NWS Transformation Safety National Program National Weather Service Lightning Fatalities in 2025: 20 Weather.gov > Safety > National Weather Service Lightning Fatalities in 2025: 20 Last Updated: 7/31/2025. This page is updated when new information is received and reviewed for completeness. Statistics and graphics courtesy of John Jensenius (National Lightning Safety Council). This data is preliminary and does not necessarily represent all fatalities to date. No. Date Day ST City/County Age Sex Location Activity 1 4/11 Friday NC Goldsboro 39 M River/creek Fishing from boat 2 4/22 Tuesday MS Rankin Cnty 68 M Reservoir Fishing from boat 3 6/8 Sunday TX Gunter 41 M Golf course Golfing 4 6/20 Friday FL New Smyrna Beach 29 M Beach Standing in water 5 6/26 Thursday MO Eagleville 26 F Field Walking 6 6/27 Friday OK Eufaula 57 F Neighborhood Walking 7 6/29 Sunday NC Pender County 53 M Creek Boating 8 6/29 Sunday OH Columbus 36 M Field Soccer 9 7/8 Tuesday NJ Hardyston 28 M Golf course Golfing 10 7/10 Thursday GA Waresboro 18 M Pond in open field Fishing 11 7/10 Thursday GA Waresboro 19 M Pond in open field Fishing 12 7/16 Wednesday NJ Jackson Twp. 61 M Outdoor archery range Archery 13 7/26 Saturday OK Lake Texoma 32 F Beach Beach activities 14 8/30 Saturday PR Villalba 48 M Lake Fishing from boat 15 9/11 Thursday CO Conejos Cnty 25 M National Forest Hunting 16 9/11 Thursday CO Conejos Cnty 25 M National Forest Hunting 17 9/22 Monday WL Kewaskum 48 M Wooded area Working in forest (Dept.Nat .Res) 18 9/22 Monday FL Highlands Cnty 38 M Open area Hunting 19 9/22 Monday FL Highlands Cnty 31 M Open area Hunting 20 10/18 Saturday LA Bernice 17 M Deer stand Hunting Lightning Fatalities 2025 by State (Direct Fatalities Only) State Gender Age* Day Of Week* By Month NC 2 M 17 (85%) 0-9 0 (00%) Sun 3 (15%) 25 24 23 22 21 20 19 18 17 16 15 10 Yr Avg MS 1 F 3 (15%) 10-19 3 (15%) Mon 3 (15%) Jan 0 0 0 0 0 0 0 0 0 0 0 0 TX 1 20-29 5 (25%) Tue 2 (10%) Feb 0 0 0 0 0 0 0 1 0 0 0 0 FL3 30-39 5 (25%) Wed 1 (5%) Mar 0 1 0 0 0 0 0 0 0 2 0 0 OK 2 40-49 3 (15%) Thu 5 (25%) Apr 2 0 3 0 0 0 0 1 0 4 2 1 MO 1 50-59 2 (10%) Fri 3 (15%) May 0 2 3 0 0 4 1 2 2 1 4 2 GA 2 60-69 2 (10%) Sat 3 (15%) Jun 6 4 1 2 2 2 7 5 2 4 11 4 OH 2 70-79 0 (00%) Jul 5 3 1 7 4 8 5 7 7 12 5 6 NJ 2 80-89 0 (00%) Aug 1 2 4 6 4 2 5 2 3 13 4 5 PR 1 Sep 5 1 1 4 1 1 3 2 2 3 2 2 CO 2 Oct 1 0 0 0 0 0 0 1 0 0 0 0 WI 1 Nov - 0 0 0 0 0 0 0 0 0 0 0 LA 1 Dec - 0 0 0 0 0 0 0 0 1 0 0 Year 20 13 14 19 11 17 21 21 16 40 28 20** *Due to rounding, percentages may not add up to 100 percent. ** Note : Data are considered preliminary. Refer to Storm Data for official data. Note: Monthly averages are based on a 10-year average from 2015 to 2024. Due to rounding, the sum of the monthly averages may not equal the yearly average. Fatality statistics for past years Source: National Lightning Safety Council US Dept of Commerce National Oceanic and Atmospheric Administration National Weather Service Safety 1325 East West Highway Silver Spring, MD 20910 Comments? Questions? Please Contact Us. Disclaimer Information Quality Help Glossary Privacy Policy Freedom of Information Act (FOIA) About Us Career Opportunities",
+      "fetched": true,
+      "error": null
+    },
+    {
+      "id": "src_501d14be4a",
+      "url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "title": "Deaths caused by lightning have been consistently rising",
+      "snippet": "May 27, 2026 \u00b7 Lightning has emerged as the most lethal natural hazard in India, with the number of fatalities rising consistently over the years.",
+      "provider": "web",
+      "subtopic": "how lightning forms and lightning related deaths in this year \u2014 future outlook and open problems",
+      "tier": "community",
+      "extracted_text": "Deaths caused by lightning have been consistently rising - The Hindu You are logged in Loading... LOGOUT You don\u2019t have any Active Subscription. Subscribe now Subscribed with another email? Logout and Login with that one. Your active subscription(s) Account subscription benefits alongside Premium Stories, Editorials, Opinions and more. Unlock these with Subscription Products you've access to Additional Subscription Benefits eBooks Webinars Newsletters Games Monthly Digest Account Settings Go to My Account Bookmarks Manage Subscriptions Need help with your subscription? customersupport@thehindu.co.in 1800 102 1878 Deaths caused by lightning have been consistently rising State-wise trends show that the majority of deaths caused by lightning happened in non-peninsular States Updated - May 27, 2026 11:04 am IST Serish Nanisetti READ LATER SEE ALL Remove Lightning streaks across the sky over Visakhapatnam, Andhra Pradesh | Photo Credit: KR DEEPAK Lightning has emerged as the most lethal natural hazard in India, with the number of fatalities rising consistently over the years. A review of reports published by the National Crime Records Bureau (NCRB) showed that the country reported a total of 1,02,263 deaths due to lightning in the 50-year-period between 1975 and 2024 (Chart 1). Over half of these deaths happened between 2005 and 2024. The decennial averages of deaths caused by lightning in the last three decades jumped from 1,683 (1995-2004) to 2,476 (2005-2014) and 2,809 (2015-2024). This is despite India\u2019s broader progress in reducing deaths from natural causes, thanks to better forecasting, modelling and disaster preparedness. From 2016, lightning accounted for at least 50% of all deaths due to natural causes while cyclones and floods accounted for fewer (Chart 2). There were 3,315 deaths caused by lightning in 2016, which was the highest ever since 1974, as per the NCRB. In terms of proportion, lightning accounted for the highest share of all deaths due to natural causes in 2021. There were 2,880 deaths due to lightning, which was 70.4% of the 4,091 deaths due to natural causes. Published - May 27, 2026 08:00 am IST Read Comments Copy link Email Facebook Twitter Telegram LinkedIn WhatsApp Reddit READ LATER SEE ALL Remove Related Topics Data Point 0 / 0 Sign in to unlock member-only benefits! Access 10 free stories every month Save stories to read later Access to comment on every story Sign-up/manage your newsletter subscriptions with a single click Get notified by email for early access to discounts & offers on our products \u2715 Looks like you are already logged in from more than 5 devices! To continue logging in, remove at least one device from the below list Log out Log Out from all devices Terms & conditions | Institutional Subscriber Comments Comments have to be in English, and in full sentences. They cannot be abusive or personal. Please abide by our community guidelines for posting your comments. We have migrated to a new commenting platform. If you are already a registered user of The Hindu and logged in, you may continue to engage with our articles. If you do not have an account please register and login to post comments. Users can access their older comments by logging into their accounts on Vuukle.",
+      "fetched": true,
+      "error": null
+    }
+  ],
+  "papers": [
+    {
+      "id": "paper_eef360f535",
+      "source_url": "http://arxiv.org/abs/2207.03769v2",
+      "title": "Laser-guided lightning",
+      "authors": [],
+      "publication": "",
+      "abstract": "Electric currents circulating between charged clouds and the earth surface during lightning discharges are responsible for considerable damages and casualties. It is therefore important to develop better protection methods in addition to the traditional Franklin rod. Here we present the first demonstration that filaments formed by short and intense laser pulses can guide lightning discharges over ",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.2207.03769",
+      "citation": "\"Laser-guided lightning\". DOI: 10.48550/arXiv.2207.03769",
+      "ai_summary": ""
+    },
+    {
+      "id": "paper_cb55367d3a",
+      "source_url": "http://arxiv.org/abs/1606.03285v2",
+      "title": "Lightning detection in planetary atmospheres",
+      "authors": [],
+      "publication": "",
+      "abstract": "Lightning in planetary atmospheres is now a well-established concept. Here we discuss the available detection techniques for, and observations of, planetary lightning by spacecraft, planetary landers and, increasingly, sophisticated terrestrial radio telescopes. Future space missions carrying lightning-related instrumentation are also summarised, specifically the European ExoMars mission and Japan",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.1606.03285",
+      "citation": "\"Lightning detection in planetary atmospheres\". DOI: 10.48550/arXiv.1606.03285",
+      "ai_summary": ""
+    },
+    {
+      "id": "paper_d524f29c9c",
+      "source_url": "http://arxiv.org/abs/1411.4784v2",
+      "title": "Theory of ball lightning",
+      "authors": [],
+      "publication": "",
+      "abstract": "We present a comprehensive theory on the formation of ball lightning, a luminous sphere sometimes observed after normal lightning. In a ball lightning event, a relativistic electron bunch can be produced by the stepped leader of lightning and coherently emit high-power microwave when striking the ground. The intense microwave ionizes the local air and evacuates the resulting plasma by its radiatio",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.1411.4784",
+      "citation": "\"Theory of ball lightning\". DOI: 10.48550/arXiv.1411.4784",
+      "ai_summary": ""
+    },
+    {
+      "id": "paper_cb990995ba",
+      "source_url": "http://arxiv.org/abs/1606.04421v1",
+      "title": "Analysis of Conditions favorable for Ball Lightning Creation",
+      "authors": [],
+      "publication": "",
+      "abstract": "This report uses a few well documented cases of Ball Lightning (or BL for short) observations to demonstrate a correlation between BL and positive lightning, especially strong positive lightning. This allows to draw conclusions and predictions about future BL observations and the pro- duction of these objects in the laboratory. Contrary to many current BL theories, these objects can be created wit",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.1606.04421",
+      "citation": "\"Analysis of Conditions favorable for Ball Lightning Creation\". DOI: 10.48550/arXiv.1606.04421",
+      "ai_summary": ""
+    },
+    {
+      "id": "paper_40b6a79364",
+      "source_url": "http://arxiv.org/abs/0910.0783v1",
+      "title": "Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon",
+      "authors": [],
+      "publication": "",
+      "abstract": "The author (physicist)has observed the very strange,beautiful and frightening Lightning Ball (LB). He has never forgotten this phenomenon. During his working life he could not devote himself to the problem of LB-formation.Only two years ago as he has been reading different unbelievable models of LB-formation, he decided to work on this problem. By studying the literature and the crucial points of ",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.0910.0783",
+      "citation": "\"Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon\". DOI: 10.48550/arXiv.0910.0783",
+      "ai_summary": ""
+    },
+    {
+      "id": "paper_df9ca6d3bd",
+      "source_url": "http://arxiv.org/abs/2202.12428v2",
+      "title": "A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature",
+      "authors": [],
+      "publication": "",
+      "abstract": "Recently, four remarkably straight very brief flashes of light were captured on video in Perth, Australia within 0.5s of one another. Straight lightning was recently identified as a prediction of macroscopic dark matter (macros) -- a broad class of alternative candidates to particle dark matter. A sufficiently large macro passing through the atmosphere producing a straight column ofplasma would pr",
+      "method": "",
+      "results": "",
+      "discussion": "",
+      "conclusion": "",
+      "future_work": "",
+      "doi": "10.48550/arXiv.2202.12428",
+      "citation": "\"A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature\". DOI: 10.48550/arXiv.2202.12428",
+      "ai_summary": ""
+    }
+  ],
+  "images": [
+    {
+      "id": "img_eb620ad476",
+      "source_url": "http://arxiv.org/abs/2207.03769v2",
+      "image_url": "https://arxiv.org/icons/licenses/by-4.0.png",
+      "caption": "license icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_30ced68407",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/10/gkt-logo.png",
+      "caption": "logo",
+      "kind": "figure"
+    },
+    {
+      "id": "img_bd6ddb69e7",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/08/Lightning-Deaths-Surge-in-India-1755056298-1-300x200.jpg",
+      "caption": "Lightning Deaths Surge in India",
+      "kind": "photo"
+    },
+    {
+      "id": "img_b9c6af3a55",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/04/UNESCO-Recognises-Bhagavad-Gita-and-Natyashastra-1745044800-1-75x50.jpg",
+      "caption": "UNESCO Recognises Bhagavad Gita and Natyashastra",
+      "kind": "photo"
+    },
+    {
+      "id": "img_c63a947c20",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/04/EU-Fines-Apple-and-Meta-for-DMA-Violations-1745478894-75x50.webp",
+      "caption": "EU Fines Apple and Meta for DMA Violations",
+      "kind": "figure"
+    },
+    {
+      "id": "img_5aa7f358d5",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/05/The-Resistance-Front-1747457281-1-75x50.jpg",
+      "caption": "The Resistance Front",
+      "kind": "photo"
+    },
+    {
+      "id": "img_b2aef29d9d",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/05/Revised-Economic-Capital-Framework-of-the-Reserve-Bank-1748395100-1-75x50.jpg",
+      "caption": "Revised Economic Capital Framework of the Reserve Bank",
+      "kind": "photo"
+    },
+    {
+      "id": "img_9376766c71",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/05/India-Pakistan-Military-Hotline-1747073770-1-75x50.jpg",
+      "caption": "India-Pakistan Military Hotline",
+      "kind": "photo"
+    },
+    {
+      "id": "img_679cc2965b",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/05/Aircraft-Carriers-1748652868-1-75x50.jpg",
+      "caption": "Aircraft Carriers",
+      "kind": "photo"
+    },
+    {
+      "id": "img_56029c6df4",
+      "source_url": "https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "image_url": "https://www.gktoday.in/wp-content/uploads/2025/06/kannada-25-26.jpg",
+      "caption": "GKToday App",
+      "kind": "photo"
+    },
+    {
+      "id": "img_5fd69528ce",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/a8be9d005b241e7318265e99ad816f8bb003a8085675ecdbf918201f5ad6a4fe/lightyear_networkapi/resizefill_w976%3Bquality_80%3Bformat_webp/https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2025-07%2F5268e3a0-628a-11f0-bcbb-835bcd016fa3",
+      "caption": "Lightning strikes near the Executive Office building in Washington, D.C.",
+      "kind": "figure"
+    },
+    {
+      "id": "img_5a36852350",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/8ec8f9b6c89b61183003dc5c3d27ab6aca87fb7b4f5737cdb14885ab2dda74cc/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F196d85ac20317de840965046e354aefa.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_0a5cc061b6",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/406ed00e0b8a8881e9f0f3881ad3977a5844707e36b0caeb0916a51cdaef1997/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F196d85ac20317de840965046e354aefa.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_037628858d",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/49e81e9ad1dcdaed4617fc4a27b3b7c21b1c769ee79d27b5ef1878d9bd642e1d/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com%2F251ab951adc8b95548575d5da119bac2.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_97a0c2cbd3",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/10c15f8341e220cb87cbbfee9473fda86136e71416048f934e7dffa83ae15d0f/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com%2F251ab951adc8b95548575d5da119bac2.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_791668bd69",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/dbecc5f794aaf1582d13791889426f324ab639e829f03504807ab1dc45a81b02/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2F8069159f5ea9af7b60ada11e4f58a68f.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_f4893ae044",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/8e9c7271e1129f0ecb5b50b3b83701644012ce9b635461c2855a4dd7ad5908cb/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2F8069159f5ea9af7b60ada11e4f58a68f.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_06da28deeb",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/e3e824d67159360d985075f41fe19437939403ca6fc372d57dce4f14ea4a378d/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F6ed2e94a36d2aff4bf0f3c1ad1927ee9.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_d391504374",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/64628729ab166857cb5a798b7cac2915f6cf3c5f5b8888966064e891d1224c41/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F6ed2e94a36d2aff4bf0f3c1ad1927ee9.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_da27058dc4",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/c84668937ecc58347d7c3d85e6923e76c294fae4dc30359e3a8c192d525740ff/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com%2F79d25332a2279623bd6f9cd00e2817b1.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_60cc1d5e10",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/d9d1324ff5025368d4782170a98a99c3804edc3f3d70ed3c65c4352b30654fa6/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fafp.com%2F79d25332a2279623bd6f9cd00e2817b1.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_fa0c4f6766",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/be9c28aed5a8cbd05a73b381b3b39c2444b488b5f8a832cd4eb5f79a4d900222/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F01e0f3101d132dc9af3c58aeaebb53f2.png",
+      "caption": "",
+      "kind": "figure"
+    },
+    {
+      "id": "img_a9bb0c2d90",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/01f01cf9ccd74aa3db72e9c829c2e39c62b978a6d6d4f88a849ea3fac9ac32d3/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fbbc_us_articles_995%2F01e0f3101d132dc9af3c58aeaebb53f2.png",
+      "caption": "",
+      "kind": "figure"
+    },
+    {
+      "id": "img_886426a25c",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/4d76e92e54aa06313825c2d87cd8aa229ed43ecb9cc816bbc030237aac2276c9/lightyear_networkapi/smartcrop_w148_h148_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2F0c2b71b59fbeccc927fa3985228e233e.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_32afab60c1",
+      "source_url": "https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "image_url": "https://s.yimg.com/lo/mysterio/api/ccc4a896854b021e1780994f6f8d5f172ce7adb3bc31bc6425632176b3bd5230/lightyear_networkapi/smartcrop_w896_h504_faces%3Bquality_95/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fap.org%2F0c2b71b59fbeccc927fa3985228e233e.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_22a8a146b1",
+      "source_url": "https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721",
+      "image_url": "https://images.theconversation.com/files/752681/original/file-20260806-59-vgu1d5.png?ixlib=rb-4.1.1&q=45&auto=format&w=754&fit=clip",
+      "caption": "",
+      "kind": "figure"
+    },
+    {
+      "id": "img_0d75345100",
+      "source_url": "https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721",
+      "image_url": "https://cdn.theconversation.com/static/tc/author/width170_default-bea415b3a0223821a698f6e3f6d5ab99.jpg",
+      "caption": "",
+      "kind": "photo"
+    },
+    {
+      "id": "img_f24acda759",
+      "source_url": "https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721",
+      "image_url": "https://cdn.theconversation.com/static/tc/content/translations-6981f1c1b8c1ca1c0da0dfc36aaad0e6.svg",
+      "caption": "",
+      "kind": "figure"
+    },
+    {
+      "id": "img_7e2eed25ca",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/menu-close-icon.svg",
+      "caption": "Close",
+      "kind": "figure"
+    },
+    {
+      "id": "img_34dc64eb5d",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-lock-icon.svg",
+      "caption": "lock icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_78ef1e4e3d",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-tick-icon.svg",
+      "caption": "tick icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_db47487642",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-arrow.svg",
+      "caption": "arrow icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_9546c2f050",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-lock-icon.svg",
+      "caption": "lock icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_7e6019d35f",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-tick-icon.svg",
+      "caption": "tick icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_bbec2dd6c8",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-arrow.svg",
+      "caption": "arrow icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_11cdb1430a",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-lock-icon.svg",
+      "caption": "lock icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_f20d4653dc",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-tick-icon.svg",
+      "caption": "tick icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_a081b5525f",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-arrow.svg",
+      "caption": "arrow icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_c8d2fda22c",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-lock-icon.svg",
+      "caption": "lock icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_76456f5345",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-tick-icon.svg",
+      "caption": "tick icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_99d9d10261",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-arrow.svg",
+      "caption": "arrow icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_d565e30d82",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-lock-icon.svg",
+      "caption": "lock icon",
+      "kind": "figure"
+    },
+    {
+      "id": "img_83dfb7c6a5",
+      "source_url": "https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece",
+      "image_url": "https://www.thehindu.com/theme/images/th-online/account-page-tick-icon.svg",
+      "caption": "tick icon",
+      "kind": "figure"
+    }
+  ],
+  "notes": "",
+  "report": {
+    "query": "how lightning forms and lightning related deaths in this year",
+    "executive_summary": "Sir, an AI-written summary wasn't available this run, so here's what the top sources say about 'how lightning forms and lightning related deaths in this year':\n1. Laser-guided lightning: [2207.03769v2] Laser-guided lightning Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Optics arXiv:2207.03769v2 (physics) [Submitted on 8 Jul 2022 ( v1 ), last revised 19 Jan 2023 (this version, v2)] Title: Laser-guided lightning Authors: Aur\u00e9lien Houard , Pierre Walch , Thomas Produit , Victor Moreno , Benoit Mahieu , Antonio Sunjerga , Clemens Herkommer , Amir\n2. Lightning detection in planetary atmospheres: [1606.03285v2] Lightning detection in planetary atmospheres Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Space Physics arXiv:1606.03285v2 (physics) [Submitted on 10 Jun 2016 ( v1 ), last revised 22 Aug 2016 (this version, v2)] Title: Lightning detection in planetary atmospheres Authors: Karen L Aplin , Georg Fischer View a PDF of the paper titled Lightning de\n3. Theory of ball lightning: [1411.4784v2] Theory of ball lightning Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Plasma Physics arXiv:1411.4784v2 (physics) [Submitted on 18 Nov 2014 ( v1 ), last revised 21 Dec 2015 (this version, v2)] Title: Theory of ball lightning Authors: H.-C. Wu View a PDF of the paper titled Theory of ball lightning, by H.-C.\n4. Analysis of Conditions favorable for Ball Lightning Creation: [1606.04421v1] Analysis of Conditions favorable for Ball Lightning Creation Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > Atmospheric and Oceanic Physics arXiv:1606.04421v1 (physics) [Submitted on 13 Jun 2016] Title: Analysis of Conditions favorable for Ball Lightning Creation Authors: H. Boerner View a PDF of the paper titled Analysis of Conditions favorable \n5. Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon: [0910.0783v1] Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon Skip to main content Search arXiv Press Enter to search \u00b7 Advanced search Physics > General Physics arXiv:0910.0783v1 (physics) [Submitted on 5 Oct 2009] Title: Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon Authors: Domokos Tar Vi",
+    "technical_summary": "",
+    "detailed_report": "",
+    "key_findings": [],
+    "advantages": [],
+    "limitations": [],
+    "future_research": "",
+    "conclusion": "",
+    "references": [
+      "\"Laser-guided lightning\". DOI: 10.48550/arXiv.2207.03769",
+      "\"Lightning detection in planetary atmospheres\". DOI: 10.48550/arXiv.1606.03285",
+      "\"Theory of ball lightning\". DOI: 10.48550/arXiv.1411.4784",
+      "\"Analysis of Conditions favorable for Ball Lightning Creation\". DOI: 10.48550/arXiv.1606.04421",
+      "\"Observation of Lightning Ball (Ball Lightning): A new phenomenological description of the phenomenon\". DOI: 10.48550/arXiv.0910.0783",
+      "\"A Straight Lightning Bolt?! Observation of a Predicted Macro Dark Matter Signature\". DOI: 10.48550/arXiv.2202.12428",
+      "National Weather Service Lightning Fatalities in 2026: 14 \u2014 https://www.weather.gov/safety/lightning-fatalities",
+      "Lightning Deaths Surge in India - GKToday \u2014 https://www.gktoday.in/lightning-deaths-surge-in-india/",
+      "4 lightning deaths were reported across the U.S. in recent ... \u2014 https://www.yahoo.com/news/weather-news/article/4-lightning-deaths-were-reported-across-the-us-in-recent-days-what-are-the-odds-youll-get-struck-in-your-lifetime-and-how-can-you-minimize-the-risk-220224626.html?fr=sycsrp_catchall",
+      "National Lightning Safety Council - Facebook \u2014 https://www.facebook.com/LightningSafetyCouncil/posts/summary-of-2025-lightning-deathsduring-2025-there-were-a-total-of-21-known-light/906668885373600/",
+      "September 2025 lightning strike deaths match a grim milestone \u2014 https://www.usatoday.com/story/news/nation/2025/10/01/september-lightning-strike-deaths-match-a-grim-milestone/86364764007/",
+      "Lightning Strike Victim Data | Lightning | CDC \u2014 https://www.cdc.gov/lightning/data-research/index.html",
+      "Lightning deaths rise in 2025: How this year compares to the ... \u2014 https://www.masslive.com/weather/2025/10/lightning-deaths-rise-in-2025-how-this-year-compares-to-the-past.html",
+      "Lightning Deaths | National Lightning Safety Council \u2014 http://lightningsafetycouncil.org/LSC-Lightning-Fatalities.html",
+      "A Detailed Analysis of Lightning Deaths in the United States ... \u2014 http://lightningsafetycouncil.org/Documents/A+Detailed+Analysis+Of+Lightning+Deaths+in+the+United+States+From+2006+through+2025.pdf",
+      "Geospatial analysis of lightning-related deaths in a single ... \u2014 https://link.springer.com/article/10.1007/s11069-025-07594-5",
+      "Lightning Strike Victim Data | Lightning | CDC \u2014 https://www.cdc.gov/disasters/lightning/victimdata.html",
+      "Lightning strikes kill thousands globally each year, but for ... \u2014 https://theconversation.com/lightning-strikes-kill-thousands-globally-each-year-but-for-those-who-survive-the-storm-is-far-from-over-286721",
+      "National Weather Service Lightning Fatalities in 2025: 20 \u2014 https://www.weather.gov/safety/lightning-fatalities25",
+      "Deaths caused by lightning have been consistently rising \u2014 https://www.thehindu.com/data/deaths-caused-by-lightning-have-been-consistently-rising/article71024875.ece"
+    ],
+    "confidence_score": 0.44,
+    "contradictions": [],
+    "timeline": [],
+    "mind_map": [
+      {
+        "id": "root",
+        "label": "how lightning forms and lightning related deaths in this year",
+        "parent_id": null
+      },
+      {
+        "id": "sub_624831fce4",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 overview and background",
+        "parent_id": "root"
+      },
+      {
+        "id": "sub_f6e7950d53",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 current state and recent developments",
+        "parent_id": "root"
+      },
+      {
+        "id": "sub_80ec467def",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 advantages and limitations",
+        "parent_id": "root"
+      },
+      {
+        "id": "sub_bcbed183e7",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 comparisons and alternatives",
+        "parent_id": "root"
+      },
+      {
+        "id": "sub_1ab8c9a449",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 real-world applications",
+        "parent_id": "root"
+      },
+      {
+        "id": "sub_5462a5728d",
+        "label": "how lightning forms and lightning related deaths in this year \u2014 future outlook and open problems",
+        "parent_id": "root"
+      }
+    ]
+  },
+  "created_at": "2026-09-12T04:55:58+00:00",
+  "updated_at": "2026-09-12T04:55:58+00:00",
+  "error": null
+}

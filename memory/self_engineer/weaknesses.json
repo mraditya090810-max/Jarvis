@@ -1,0 +1,3521 @@
+[
+  {
+    "id": "wk_94e2b56157",
+    "category": "long_file",
+    "file": "main.py",
+    "line_start": 1,
+    "line_end": 1752,
+    "description": "File is 1752 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fc10416bcb",
+    "category": "large_function",
+    "file": "main.py",
+    "line_start": 987,
+    "line_end": 1166,
+    "description": "Function '_execute_tool' is 179 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_2831b1d69a",
+    "category": "large_function",
+    "file": "main.py",
+    "line_start": 1202,
+    "line_end": 1339,
+    "description": "Function '_receive_audio' is 137 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_3f9852f26f",
+    "category": "large_function",
+    "file": "main.py",
+    "line_start": 1383,
+    "line_end": 1481,
+    "description": "Function '_send_startup_briefing' is 98 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_1018d9e0e0",
+    "category": "large_function",
+    "file": "main.py",
+    "line_start": 1593,
+    "line_end": 1730,
+    "description": "Function 'run' is 137 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_294388980e",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 90,
+    "line_end": 95,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_79b9fe7d52",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 692,
+    "line_end": 693,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_71ac44f049",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 764,
+    "line_end": 766,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_63e61910cb",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 822,
+    "line_end": 824,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_67b0bcae86",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 724,
+    "line_end": 725,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e52c69a0fd",
+    "category": "broad_exception_log",
+    "file": "main.py",
+    "line_start": 1451,
+    "line_end": 1452,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4e3a66c634",
+    "category": "duplicate_signature",
+    "file": "main.py",
+    "line_start": 695,
+    "line_end": 798,
+    "description": "Functions with identical signature and near-identical length may be duplicated logic: _on_text_command, speak. Worth a manual look before merging.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_cb70925348",
+    "category": "unused_import",
+    "file": "setup.py",
+    "line_start": 14,
+    "line_end": 14,
+    "description": "Imported name 'win32com' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_8093126ce4",
+    "category": "long_file",
+    "file": "ui.py",
+    "line_start": 1,
+    "line_end": 3455,
+    "description": "File is 3455 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_157e776646",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 442,
+    "line_end": 597,
+    "description": "Function 'paintEvent' is 155 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_ca1f9a87f8",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 1037,
+    "line_end": 1129,
+    "description": "Function '__init__' is 92 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_142137c020",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 1260,
+    "line_end": 1379,
+    "description": "Function '__init__' is 119 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_036c40476b",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 1519,
+    "line_end": 1660,
+    "description": "Function '__init__' is 141 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_c2a9826671",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 1807,
+    "line_end": 1969,
+    "description": "Function '__init__' is 162 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_7f882a0e43",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 2050,
+    "line_end": 2147,
+    "description": "Function '_build_jarvis_icon' is 97 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_4a776ea599",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 2296,
+    "line_end": 2417,
+    "description": "Function '_create_desktop_shortcut' is 121 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_c03fd5be93",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 2724,
+    "line_end": 2812,
+    "description": "Function '_build_quick_drawer' is 88 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_a5d0b0ddab",
+    "category": "large_function",
+    "file": "ui.py",
+    "line_start": 2861,
+    "line_end": 2949,
+    "description": "Function '_build_content_panel' is 88 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_83df097d0a",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 50,
+    "line_end": 51,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_199e3ec6a5",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 212,
+    "line_end": 214,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9573db4a8e",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 165,
+    "line_end": 166,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_73d1156e1a",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 273,
+    "line_end": 274,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_17ebcac3f0",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 295,
+    "line_end": 296,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_384ca2f072",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 311,
+    "line_end": 312,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_dad9e6b625",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 386,
+    "line_end": 387,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_48f19da626",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 1677,
+    "line_end": 1678,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fce62e3696",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 1728,
+    "line_end": 1733,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_68a55e4f7e",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2254,
+    "line_end": 2255,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_aac6b931a2",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2414,
+    "line_end": 2417,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3315d5f4b1",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2505,
+    "line_end": 2506,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0a43ee4c52",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2511,
+    "line_end": 2512,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f266f4598a",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 3055,
+    "line_end": 3056,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f2dd5c06a3",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 3112,
+    "line_end": 3113,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_98abea69e1",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 3229,
+    "line_end": 3230,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0f10549cc5",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 3239,
+    "line_end": 3240,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5138d00b88",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 3312,
+    "line_end": 3313,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1443be8020",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 235,
+    "line_end": 236,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3ed82b3f7e",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 322,
+    "line_end": 323,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_68c3f399fb",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2018,
+    "line_end": 2019,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_38a8ae30c5",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2187,
+    "line_end": 2188,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0ff55f960d",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2201,
+    "line_end": 2202,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bc4f1d1e2a",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2287,
+    "line_end": 2288,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fcf733d996",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 196,
+    "line_end": 197,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_840f2db4cc",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2212,
+    "line_end": 2213,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a883c33f65",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2223,
+    "line_end": 2224,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3246a7ef0f",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2373,
+    "line_end": 2374,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_86888ed4aa",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2410,
+    "line_end": 2411,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_738b7e6a37",
+    "category": "broad_exception_log",
+    "file": "ui.py",
+    "line_start": 2386,
+    "line_end": 2387,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4376a5b3d3",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 1,
+    "line_end": 1,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_fcdbf7096a",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'QEasingCurve' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_0e61b82186",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'QMimeData' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_6c4f620270",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'QObject' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_598b3ca9ff",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'QSize' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_3841a4e2c9",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'QUrl' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_d639e5d3f8",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 25,
+    "line_end": 25,
+    "description": "Imported name 'QFontDatabase' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_64655b9e23",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 25,
+    "line_end": 25,
+    "description": "Imported name 'QLinearGradient' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_8ee5b113e4",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 25,
+    "line_end": 25,
+    "description": "Imported name 'QPainterPath' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_42c70d6dc7",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 25,
+    "line_end": 25,
+    "description": "Imported name 'QRadialGradient' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_ffee0901f4",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 30,
+    "line_end": 30,
+    "description": "Imported name 'QScrollArea' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_7699326f23",
+    "category": "unused_import",
+    "file": "ui.py",
+    "line_start": 30,
+    "line_end": 30,
+    "description": "Imported name 'QProgressBar' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_cecc2ba66f",
+    "category": "duplicate_signature",
+    "file": "ui.py",
+    "line_start": 3115,
+    "line_end": 3143,
+    "description": "Functions with identical signature and near-identical length may be duplicated logic: _update_autostart_btn, _update_brief_btn. Worth a manual look before merging.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_40c1727bd3",
+    "category": "long_file",
+    "file": "actions/browser_control.py",
+    "line_start": 1,
+    "line_end": 1079,
+    "description": "File is 1079 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a70ab6f7b9",
+    "category": "large_function",
+    "file": "actions/browser_control.py",
+    "line_start": 926,
+    "line_end": 1072,
+    "description": "Function 'browser_control' is 146 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_b777e7638c",
+    "category": "large_function",
+    "file": "actions/browser_control.py",
+    "line_start": 516,
+    "line_end": 624,
+    "description": "Function '_launch' is 108 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_cb57e84abf",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 190,
+    "line_end": 191,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_953030b123",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 213,
+    "line_end": 214,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b38278cb5b",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 343,
+    "line_end": 344,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1a792b2c6a",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 435,
+    "line_end": 441,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_83354e400a",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 1021,
+    "line_end": 1024,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a5bfc5fa3e",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 1068,
+    "line_end": 1069,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_06b96acd02",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 683,
+    "line_end": 684,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a87e8562a1",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 695,
+    "line_end": 696,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4bfec74dc9",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 704,
+    "line_end": 705,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fa796ae3a0",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 712,
+    "line_end": 713,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2fe44e0576",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 720,
+    "line_end": 721,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_363f4d51e5",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 811,
+    "line_end": 812,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7539559660",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 819,
+    "line_end": 820,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_40410984dd",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 827,
+    "line_end": 828,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9eb56863d6",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 835,
+    "line_end": 836,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ed5597444e",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 439,
+    "line_end": 440,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bb0749d7fe",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 497,
+    "line_end": 498,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3397f67351",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 502,
+    "line_end": 503,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c83156956c",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 736,
+    "line_end": 737,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2e867100bb",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 748,
+    "line_end": 749,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_543b9832ee",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 761,
+    "line_end": 762,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3f1af528a0",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 782,
+    "line_end": 783,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2a193ff51d",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 909,
+    "line_end": 910,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_289cf742b3",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 997,
+    "line_end": 998,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6184caedc7",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 188,
+    "line_end": 189,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_76c9342f27",
+    "category": "broad_exception_log",
+    "file": "actions/browser_control.py",
+    "line_start": 211,
+    "line_end": 212,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8dcc5e8a6e",
+    "category": "unused_import",
+    "file": "actions/browser_control.py",
+    "line_start": 2,
+    "line_end": 2,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_264abd6ab4",
+    "category": "large_function",
+    "file": "actions/code_graph.py",
+    "line_start": 35,
+    "line_end": 130,
+    "description": "Function 'code_graph' is 95 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_295e3f6392",
+    "category": "broad_exception_log",
+    "file": "actions/code_graph.py",
+    "line_start": 129,
+    "line_end": 130,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_42e90ad378",
+    "category": "unused_import",
+    "file": "actions/code_graph.py",
+    "line_start": 9,
+    "line_end": 9,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_2c25ea9628",
+    "category": "long_file",
+    "file": "actions/code_helper.py",
+    "line_start": 1,
+    "line_end": 632,
+    "description": "File is 632 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ba6b97c55a",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 57,
+    "line_end": 58,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c2f2ec1bbe",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 66,
+    "line_end": 67,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_db919e140e",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 252,
+    "line_end": 253,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1542f0052c",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 294,
+    "line_end": 295,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9b3036508c",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 310,
+    "line_end": 313,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2b6a8375a0",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 360,
+    "line_end": 361,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c8e365d308",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 391,
+    "line_end": 392,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2f85c09b50",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 421,
+    "line_end": 422,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7356bffcaa",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 476,
+    "line_end": 477,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b25271c94b",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 563,
+    "line_end": 569,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_535ed1f7f5",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 339,
+    "line_end": 342,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f92f25f54a",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 548,
+    "line_end": 549,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_50bfb2d942",
+    "category": "broad_exception_log",
+    "file": "actions/code_helper.py",
+    "line_start": 567,
+    "line_end": 568,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_537c4a9fd6",
+    "category": "unused_import",
+    "file": "actions/code_helper.py",
+    "line_start": 3,
+    "line_end": 3,
+    "description": "Imported name 'json' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_70bd6521fa",
+    "category": "large_function",
+    "file": "actions/computer_control.py",
+    "line_start": 359,
+    "line_end": 514,
+    "description": "Function 'computer_control' is 155 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_63ff7d8b70",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 45,
+    "line_end": 46,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b419985176",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 74,
+    "line_end": 75,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3303dd5535",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 153,
+    "line_end": 154,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_860b6c191a",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 270,
+    "line_end": 271,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2fcc028d4b",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 285,
+    "line_end": 286,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_25c0324cbb",
+    "category": "broad_exception_log",
+    "file": "actions/computer_control.py",
+    "line_start": 308,
+    "line_end": 309,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7ae720e679",
+    "category": "long_file",
+    "file": "actions/computer_settings.py",
+    "line_start": 1,
+    "line_end": 716,
+    "description": "File is 716 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_52de2b3dec",
+    "category": "large_function",
+    "file": "actions/computer_settings.py",
+    "line_start": 633,
+    "line_end": 716,
+    "description": "Function 'computer_settings' is 83 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_63eceb12a7",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 54,
+    "line_end": 55,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c0f30f52aa",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 674,
+    "line_end": 675,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ec008d54d1",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 696,
+    "line_end": 697,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_abe3c990f7",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 203,
+    "line_end": 204,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e84667cb43",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 213,
+    "line_end": 214,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c20619018a",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 220,
+    "line_end": 221,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bf40049561",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 229,
+    "line_end": 230,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1615b3656e",
+    "category": "broad_exception_log",
+    "file": "actions/computer_settings.py",
+    "line_start": 236,
+    "line_end": 237,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ab6a3e2a50",
+    "category": "large_function",
+    "file": "actions/desktop.py",
+    "line_start": 154,
+    "line_end": 235,
+    "description": "Function 'set_wallpaper' is 81 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_f28761500a",
+    "category": "large_function",
+    "file": "actions/desktop.py",
+    "line_start": 447,
+    "line_end": 534,
+    "description": "Function 'desktop_control' is 87 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_a138f112e5",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 151,
+    "line_end": 152,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f22ae25756",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 234,
+    "line_end": 235,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_cc16890752",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 250,
+    "line_end": 251,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6e2ce2876e",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 285,
+    "line_end": 286,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c84c98f393",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 427,
+    "line_end": 428,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_be88983002",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 443,
+    "line_end": 444,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_16310d526e",
+    "category": "broad_exception_log",
+    "file": "actions/desktop.py",
+    "line_start": 247,
+    "line_end": 248,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3fab453f48",
+    "category": "long_file",
+    "file": "actions/dev_agent.py",
+    "line_start": 1,
+    "line_end": 711,
+    "description": "File is 711 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_893d6b461f",
+    "category": "large_function",
+    "file": "actions/dev_agent.py",
+    "line_start": 459,
+    "line_end": 544,
+    "description": "Function '_fix_files' is 85 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_6ffb13e5e7",
+    "category": "large_function",
+    "file": "actions/dev_agent.py",
+    "line_start": 546,
+    "line_end": 685,
+    "description": "Function '_build_project' is 139 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_b933cf421a",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 359,
+    "line_end": 360,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8ce25af34b",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 434,
+    "line_end": 435,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d7a97aa036",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 456,
+    "line_end": 457,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9e6ce0fdbe",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 379,
+    "line_end": 380,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6185046b69",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 677,
+    "line_end": 678,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_51c2a4c716",
+    "category": "broad_exception_log",
+    "file": "actions/dev_agent.py",
+    "line_start": 616,
+    "line_end": 618,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_afc929fa4a",
+    "category": "long_file",
+    "file": "actions/file_controller.py",
+    "line_start": 1,
+    "line_end": 789,
+    "description": "File is 789 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b451f9f7fb",
+    "category": "large_function",
+    "file": "actions/file_controller.py",
+    "line_start": 653,
+    "line_end": 789,
+    "description": "Function 'file_controller' is 136 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_f5e83e863d",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 36,
+    "line_end": 37,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bff29f1eb0",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 231,
+    "line_end": 232,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fd1bf974d7",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 255,
+    "line_end": 256,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_47a9b51a28",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 276,
+    "line_end": 277,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bc3da07fa3",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 301,
+    "line_end": 302,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fc0838a375",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 327,
+    "line_end": 328,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9512513f18",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 358,
+    "line_end": 359,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c265cdfb90",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 380,
+    "line_end": 381,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6b0f736588",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 400,
+    "line_end": 401,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_22b5252771",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 417,
+    "line_end": 418,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_771909d043",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 457,
+    "line_end": 458,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4f206d1b0c",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 490,
+    "line_end": 491,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bbb26e4141",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 505,
+    "line_end": 506,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_35f6429343",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 559,
+    "line_end": 560,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_db2cc592f2",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 584,
+    "line_end": 585,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5c0a1691ec",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 608,
+    "line_end": 609,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_62a009819f",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 626,
+    "line_end": 627,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4fc83af4ca",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 649,
+    "line_end": 650,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_904b0e73f9",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 788,
+    "line_end": 789,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_513f19fa60",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 162,
+    "line_end": 163,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6c40883020",
+    "category": "broad_exception_log",
+    "file": "actions/file_controller.py",
+    "line_start": 475,
+    "line_end": 476,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_dcf3a0db96",
+    "category": "long_file",
+    "file": "actions/file_processor.py",
+    "line_start": 1,
+    "line_end": 836,
+    "description": "File is 836 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3dce1973a7",
+    "category": "large_function",
+    "file": "actions/file_processor.py",
+    "line_start": 83,
+    "line_end": 173,
+    "description": "Function '_process_image' is 90 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_ec0c12ab6c",
+    "category": "large_function",
+    "file": "actions/file_processor.py",
+    "line_start": 315,
+    "line_end": 410,
+    "description": "Function '_process_data' is 95 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_6c22968b88",
+    "category": "large_function",
+    "file": "actions/file_processor.py",
+    "line_start": 584,
+    "line_end": 711,
+    "description": "Function '_process_video' is 127 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_d071abd8f8",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 311,
+    "line_end": 312,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bc44c67e99",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 329,
+    "line_end": 330,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6aac857b24",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 409,
+    "line_end": 410,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_cbe929f239",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 418,
+    "line_end": 419,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ada1d38dae",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 510,
+    "line_end": 511,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b21d3ec203",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 114,
+    "line_end": 115,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ec74596038",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 137,
+    "line_end": 138,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_44582e5f26",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 150,
+    "line_end": 151,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3f1326803f",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 162,
+    "line_end": 163,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4e084a9c03",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 170,
+    "line_end": 171,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_700d488545",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 221,
+    "line_end": 222,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d10c276f8d",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 230,
+    "line_end": 231,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_81372bcfa0",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 341,
+    "line_end": 342,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_857dc45b05",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 353,
+    "line_end": 354,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_40af6e8d4b",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 370,
+    "line_end": 371,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f144b537df",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 388,
+    "line_end": 389,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_63b718dd11",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 399,
+    "line_end": 400,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_52db06f98d",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 438,
+    "line_end": 439,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1ab9dc8c18",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 528,
+    "line_end": 529,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_06d1f89f8f",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 550,
+    "line_end": 551,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c69eeb88e8",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 563,
+    "line_end": 564,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7ae811b9f7",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 579,
+    "line_end": 580,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a140ba6060",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 592,
+    "line_end": 593,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c96cc0dbd0",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 613,
+    "line_end": 614,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_004eb12754",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 626,
+    "line_end": 627,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_34d8fe65ec",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 642,
+    "line_end": 643,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b52cc0f676",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 657,
+    "line_end": 658,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2b867ffbd1",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 676,
+    "line_end": 677,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e6f834d442",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 691,
+    "line_end": 692,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b5da117b2b",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 708,
+    "line_end": 709,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_388edd1bb8",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 731,
+    "line_end": 732,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9e69cd9e54",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 740,
+    "line_end": 741,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a6de8ecef3",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 774,
+    "line_end": 775,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b4618baf10",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 807,
+    "line_end": 808,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_12a013c955",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 264,
+    "line_end": 265,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_cd21489b4d",
+    "category": "broad_exception_log",
+    "file": "actions/file_processor.py",
+    "line_start": 471,
+    "line_end": 472,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_664b638471",
+    "category": "unused_import",
+    "file": "actions/file_processor.py",
+    "line_start": 19,
+    "line_end": 19,
+    "description": "Imported name 'os' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_67dc599e7a",
+    "category": "unused_import",
+    "file": "actions/file_processor.py",
+    "line_start": 26,
+    "line_end": 26,
+    "description": "Imported name 'datetime' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_0f794692ca",
+    "category": "unused_import",
+    "file": "actions/flight_finder.py",
+    "line_start": 9,
+    "line_end": 9,
+    "description": "Imported name 'is_linux' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_e28378e92d",
+    "category": "long_file",
+    "file": "actions/game_updater.py",
+    "line_start": 1,
+    "line_end": 1054,
+    "description": "File is 1054 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_14460eb0d8",
+    "category": "large_function",
+    "file": "actions/game_updater.py",
+    "line_start": 932,
+    "line_end": 1047,
+    "description": "Function 'game_updater' is 115 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_341f0f5ab8",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 145,
+    "line_end": 146,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5fb8044e21",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 182,
+    "line_end": 183,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e908f8f9eb",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 191,
+    "line_end": 192,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5dd2e63c35",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 273,
+    "line_end": 274,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_627b4c2e22",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 317,
+    "line_end": 318,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8dc8ce0fa3",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 325,
+    "line_end": 326,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c335152a58",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 340,
+    "line_end": 341,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ced65b620b",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 373,
+    "line_end": 374,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ccf9b2e7ab",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 611,
+    "line_end": 612,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a47312ca32",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 752,
+    "line_end": 753,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e118cd3d0a",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 852,
+    "line_end": 853,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0f9e862011",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 871,
+    "line_end": 872,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_73b5838bf5",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 898,
+    "line_end": 899,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b46713018e",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 928,
+    "line_end": 929,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f6ddd0f0f9",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 303,
+    "line_end": 304,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_87b011ec57",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 736,
+    "line_end": 737,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e08af1e54a",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 773,
+    "line_end": 774,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_63b293868f",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 798,
+    "line_end": 799,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7b3c4f14b1",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 83,
+    "line_end": 84,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8e00409751",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 169,
+    "line_end": 170,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_69d855fc8c",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 289,
+    "line_end": 290,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3b793cc444",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 315,
+    "line_end": 316,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2d3450255d",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 338,
+    "line_end": 339,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_50bed16fca",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 420,
+    "line_end": 421,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a07a7ccd2b",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 687,
+    "line_end": 688,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_64d6d36393",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 542,
+    "line_end": 543,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_eb584e68bb",
+    "category": "broad_exception_log",
+    "file": "actions/game_updater.py",
+    "line_start": 418,
+    "line_end": 419,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7cf7f248f4",
+    "category": "unused_import",
+    "file": "actions/game_updater.py",
+    "line_start": 12,
+    "line_end": 12,
+    "description": "Imported name 'get_os' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_c0c1489754",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 129,
+    "line_end": 130,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_1dd71d68b3",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 140,
+    "line_end": 141,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_14b39b56d2",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 213,
+    "line_end": 214,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_20edc22726",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 100,
+    "line_end": 101,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_de2b63f88f",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 153,
+    "line_end": 154,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8ce2a33fcc",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 204,
+    "line_end": 205,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b9e4b8e29d",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 228,
+    "line_end": 229,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_45a8fd4eae",
+    "category": "broad_exception_log",
+    "file": "actions/open_app.py",
+    "line_start": 186,
+    "line_end": 187,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5c9ec50746",
+    "category": "unused_import",
+    "file": "actions/open_app.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'psutil' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_070ed7fcb0",
+    "category": "large_function",
+    "file": "actions/reminder.py",
+    "line_start": 46,
+    "line_end": 144,
+    "description": "Function '_write_notify_script' is 98 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_efd591c71f",
+    "category": "broad_exception_log",
+    "file": "actions/reminder.py",
+    "line_start": 190,
+    "line_end": 191,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_17f6ef211e",
+    "category": "broad_exception_log",
+    "file": "actions/reminder.py",
+    "line_start": 315,
+    "line_end": 316,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_c9fbc49613",
+    "category": "unused_import",
+    "file": "actions/reminder.py",
+    "line_start": 2,
+    "line_end": 2,
+    "description": "Imported name 'os' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_6477573786",
+    "category": "broad_exception_log",
+    "file": "actions/screen_processor.py",
+    "line_start": 57,
+    "line_end": 58,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0aa151bf48",
+    "category": "broad_exception_log",
+    "file": "actions/screen_processor.py",
+    "line_start": 152,
+    "line_end": 153,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8386de3561",
+    "category": "broad_exception_log",
+    "file": "actions/screen_processor.py",
+    "line_start": 165,
+    "line_end": 166,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_df9c1bbced",
+    "category": "unused_import",
+    "file": "actions/screen_processor.py",
+    "line_start": 1,
+    "line_end": 1,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_8e9d311434",
+    "category": "broad_exception_log",
+    "file": "actions/send_message.py",
+    "line_start": 32,
+    "line_end": 33,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b2a1cab405",
+    "category": "broad_exception_log",
+    "file": "actions/send_message.py",
+    "line_start": 259,
+    "line_end": 260,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_de2903747d",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 67,
+    "line_end": 69,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b0bf02565e",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 79,
+    "line_end": 80,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_6471c771bf",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 96,
+    "line_end": 97,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_cab52bea32",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 107,
+    "line_end": 108,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_be70f262f1",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 160,
+    "line_end": 161,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_bb065d47b4",
+    "category": "broad_exception_log",
+    "file": "actions/system_monitor.py",
+    "line_start": 54,
+    "line_end": 55,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d760c7d426",
+    "category": "broad_exception_log",
+    "file": "actions/weather_report.py",
+    "line_start": 28,
+    "line_end": 31,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_22c438e78d",
+    "category": "broad_exception_log",
+    "file": "actions/weather_report.py",
+    "line_start": 39,
+    "line_end": 40,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d598975d37",
+    "category": "broad_exception_log",
+    "file": "actions/weather_report.py",
+    "line_start": 50,
+    "line_end": 51,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9c1dc4a0d5",
+    "category": "broad_exception_log",
+    "file": "actions/web_search.py",
+    "line_start": 333,
+    "line_end": 334,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a34845ba2d",
+    "category": "duplicate_signature",
+    "file": "actions/web_search.py",
+    "line_start": 180,
+    "line_end": 257,
+    "description": "Functions with identical signature and near-identical length may be duplicated logic: _store, _store. Worth a manual look before merging.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_f8bcb64b37",
+    "category": "broad_exception_log",
+    "file": "actions/youtube_video.py",
+    "line_start": 341,
+    "line_end": 342,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_059f1a0453",
+    "category": "broad_exception_log",
+    "file": "actions/youtube_video.py",
+    "line_start": 153,
+    "line_end": 154,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_dc33de9e84",
+    "category": "broad_exception_log",
+    "file": "actions/youtube_video.py",
+    "line_start": 159,
+    "line_end": 162,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_988fb29ccc",
+    "category": "unused_import",
+    "file": "actions/youtube_video.py",
+    "line_start": 5,
+    "line_end": 5,
+    "description": "Imported name 'time' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_c71988c920",
+    "category": "unused_import",
+    "file": "actions/youtube_video.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'shutil' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_b6e9983d50",
+    "category": "unused_import",
+    "file": "actions/youtube_video.py",
+    "line_start": 36,
+    "line_end": 36,
+    "description": "Imported name 'get_os' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_2c8c7fa306",
+    "category": "unused_import",
+    "file": "actions/youtube_video.py",
+    "line_start": 13,
+    "line_end": 13,
+    "description": "Imported name 'pyautogui' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_94a9ebd9fb",
+    "category": "unused_import",
+    "file": "actions/youtube_video.py",
+    "line_start": 19,
+    "line_end": 19,
+    "description": "Imported name 'np' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_4b62cde7b6",
+    "category": "duplicate_signature",
+    "file": "actions/youtube_video.py",
+    "line_start": 142,
+    "line_end": 227,
+    "description": "Functions with identical signature and near-identical length may be duplicated logic: _get_transcript, _scrape_video_info. Worth a manual look before merging.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_b03efb3842",
+    "category": "unused_import",
+    "file": "actions/_paths.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'clear_cache' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_8ce9c70f78",
+    "category": "unused_import",
+    "file": "actions/_paths.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'get_base_dir' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_fc7f3a8422",
+    "category": "unused_import",
+    "file": "actions/_paths.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'get_special_folder' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_cdcc836b58",
+    "category": "unused_import",
+    "file": "actions/_paths.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'get_temp_dir' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_b404753765",
+    "category": "broad_exception_log",
+    "file": "code_graph/builder.py",
+    "line_start": 108,
+    "line_end": 109,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_03f95047a8",
+    "category": "unused_import",
+    "file": "code_graph/builder.py",
+    "line_start": 15,
+    "line_end": 15,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_be3d5b41ee",
+    "category": "unused_import",
+    "file": "code_graph/engine.py",
+    "line_start": 12,
+    "line_end": 12,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_dae4706302",
+    "category": "unused_import",
+    "file": "code_graph/models.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_2ff4495a71",
+    "category": "unused_import",
+    "file": "code_graph/models.py",
+    "line_start": 9,
+    "line_end": 9,
+    "description": "Imported name 'field' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_63f47510e1",
+    "category": "unused_import",
+    "file": "code_graph/__init__.py",
+    "line_start": 21,
+    "line_end": 21,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_25f4dd6604",
+    "category": "unused_import",
+    "file": "code_graph/__init__.py",
+    "line_start": 23,
+    "line_end": 23,
+    "description": "Imported name 'CodeGraphEngine' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_d842faed7e",
+    "category": "broad_exception_log",
+    "file": "config/__init__.py",
+    "line_start": 17,
+    "line_end": 18,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_39b5336edd",
+    "category": "unused_import",
+    "file": "config/__init__.py",
+    "line_start": 2,
+    "line_end": 2,
+    "description": "Imported name 'os' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_7808b2d47a",
+    "category": "unused_import",
+    "file": "core/installer.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_67c47decde",
+    "category": "large_function",
+    "file": "core/llm_client.py",
+    "line_start": 235,
+    "line_end": 334,
+    "description": "Function 'call_llm' is 99 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_f153a66895",
+    "category": "large_function",
+    "file": "core/llm_client.py",
+    "line_start": 378,
+    "line_end": 491,
+    "description": "Function '_stream_openai' is 113 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_fc5752d7f9",
+    "category": "large_function",
+    "file": "core/llm_client.py",
+    "line_start": 494,
+    "line_end": 592,
+    "description": "Function 'call_llm_stream' is 98 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_454e365627",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 64,
+    "line_end": 65,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_38c9123d79",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 223,
+    "line_end": 224,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7790dc8f09",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 101,
+    "line_end": 102,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_98a8bd9f34",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 321,
+    "line_end": 322,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4a8150e45d",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 368,
+    "line_end": 369,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a68d18aafe",
+    "category": "broad_exception_log",
+    "file": "core/llm_client.py",
+    "line_start": 468,
+    "line_end": 469,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_841683ab1e",
+    "category": "broad_exception_log",
+    "file": "core/paths.py",
+    "line_start": 110,
+    "line_end": 111,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8ac968a821",
+    "category": "unused_import",
+    "file": "core/paths.py",
+    "line_start": 8,
+    "line_end": 8,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_e75becff15",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 49,
+    "line_end": 50,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5d3302a8ec",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 241,
+    "line_end": 242,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_22510bda96",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 130,
+    "line_end": 131,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_ec44604ddc",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 180,
+    "line_end": 181,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_55afc23602",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 246,
+    "line_end": 247,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_2062d47e64",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 176,
+    "line_end": 177,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0b5fb961d5",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 172,
+    "line_end": 173,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a4e0c8a8f1",
+    "category": "broad_exception_log",
+    "file": "dashboard/camera_service.py",
+    "line_start": 212,
+    "line_end": 213,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_544e4befc4",
+    "category": "broad_exception_log",
+    "file": "dashboard/discovery.py",
+    "line_start": 67,
+    "line_end": 68,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_654bb8b9c8",
+    "category": "long_file",
+    "file": "dashboard/server.py",
+    "line_start": 1,
+    "line_end": 1094,
+    "description": "File is 1094 lines long (threshold 600). Consider splitting into smaller, single-responsibility modules.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9cfed595df",
+    "category": "large_function",
+    "file": "dashboard/server.py",
+    "line_start": 111,
+    "line_end": 320,
+    "description": "Function '_ensure_network_access' is 209 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_bc436c47eb",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 35,
+    "line_end": 36,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4cfc481e41",
+    "category": "large_function",
+    "file": "dashboard/server.py",
+    "line_start": 584,
+    "line_end": 1042,
+    "description": "Function '_build_app' is 458 lines long (threshold 80). Consider extracting helpers.",
+    "severity": "medium"
+  },
+  {
+    "id": "wk_4e90519cc7",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 77,
+    "line_end": 78,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b8ad19f8d2",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 361,
+    "line_end": 362,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a41eb96703",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 370,
+    "line_end": 371,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4fa13a5ad4",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 64,
+    "line_end": 65,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e00e4b3a25",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 188,
+    "line_end": 193,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_cd0f3c7bd3",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 207,
+    "line_end": 208,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_720d376ae7",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 270,
+    "line_end": 271,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_f0b254ff3d",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 353,
+    "line_end": 354,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3b11f08170",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 463,
+    "line_end": 464,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_dadc8f6edd",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 138,
+    "line_end": 139,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9a07e28cd3",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 151,
+    "line_end": 152,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_55571d6853",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 281,
+    "line_end": 282,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_70814b3b56",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 527,
+    "line_end": 528,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a99ce166dc",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 535,
+    "line_end": 536,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_727d847f79",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 553,
+    "line_end": 554,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_b9d9088f1d",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 738,
+    "line_end": 739,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_40aaa7b4d3",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 774,
+    "line_end": 775,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_77a53690ef",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 932,
+    "line_end": 933,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e689336e10",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 191,
+    "line_end": 192,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_67bceadad9",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 204,
+    "line_end": 205,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_4bcb598107",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 241,
+    "line_end": 242,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_5ceb8fcc1e",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 898,
+    "line_end": 903,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_75b5597142",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 960,
+    "line_end": 961,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0a4705e795",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 787,
+    "line_end": 788,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e77cafc144",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 796,
+    "line_end": 797,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d63ed019f1",
+    "category": "broad_exception_log",
+    "file": "dashboard/server.py",
+    "line_start": 901,
+    "line_end": 902,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fe6ca7dce0",
+    "category": "broad_exception_log",
+    "file": "dashboard/wifi_pair.py",
+    "line_start": 53,
+    "line_end": 54,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_aff8922336",
+    "category": "broad_exception_log",
+    "file": "dashboard/wifi_pair.py",
+    "line_start": 59,
+    "line_end": 60,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_335ee84665",
+    "category": "broad_exception_log",
+    "file": "dashboard/wifi_pair.py",
+    "line_start": 72,
+    "line_end": 73,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_985a4a8cd5",
+    "category": "unused_import",
+    "file": "dashboard/wifi_pair.py",
+    "line_start": 25,
+    "line_end": 25,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_b2b9fa37b4",
+    "category": "broad_exception_log",
+    "file": "memory/action_memory.py",
+    "line_start": 63,
+    "line_end": 65,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_fa35a55c06",
+    "category": "broad_exception_log",
+    "file": "memory/action_memory.py",
+    "line_start": 52,
+    "line_end": 53,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7e35f5d933",
+    "category": "unused_import",
+    "file": "memory/action_memory.py",
+    "line_start": 13,
+    "line_end": 13,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_8d29b4aa48",
+    "category": "broad_exception_log",
+    "file": "memory/config_manager.py",
+    "line_start": 27,
+    "line_end": 28,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_16fe26490c",
+    "category": "broad_exception_log",
+    "file": "memory/config_manager.py",
+    "line_start": 71,
+    "line_end": 72,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_0b9060d073",
+    "category": "broad_exception_log",
+    "file": "memory/config_manager.py",
+    "line_start": 88,
+    "line_end": 89,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_d36bed1ed7",
+    "category": "unused_import",
+    "file": "tests/test_self_engineer.py",
+    "line_start": 9,
+    "line_end": 9,
+    "description": "Imported name 'tempfile' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_e3ce9f451e",
+    "category": "unused_import",
+    "file": "tests/test_self_engineer.py",
+    "line_start": 16,
+    "line_end": 16,
+    "description": "Imported name 'Weakness' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_b4346bfc97",
+    "category": "broad_exception_log",
+    "file": "core/ai/cache.py",
+    "line_start": 39,
+    "line_end": 40,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_8e255d2401",
+    "category": "unused_import",
+    "file": "core/ai/cache.py",
+    "line_start": 14,
+    "line_end": 14,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_728f73b144",
+    "category": "broad_exception_log",
+    "file": "core/ai/config.py",
+    "line_start": 50,
+    "line_end": 51,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_e8b4b3253e",
+    "category": "unused_import",
+    "file": "core/ai/config.py",
+    "line_start": 9,
+    "line_end": 9,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_5c2752d917",
+    "category": "broad_exception_log",
+    "file": "core/ai/context_builder.py",
+    "line_start": 41,
+    "line_end": 42,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_9c216e8678",
+    "category": "broad_exception_log",
+    "file": "core/ai/context_builder.py",
+    "line_start": 45,
+    "line_end": 46,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_3f150471c1",
+    "category": "broad_exception_log",
+    "file": "core/ai/context_builder.py",
+    "line_start": 49,
+    "line_end": 50,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_34a7e50300",
+    "category": "unused_import",
+    "file": "core/ai/context_builder.py",
+    "line_start": 12,
+    "line_end": 12,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_841eda09a8",
+    "category": "unused_import",
+    "file": "core/ai/logger.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_e6d5ff3f7a",
+    "category": "broad_exception_log",
+    "file": "core/ai/metrics.py",
+    "line_start": 27,
+    "line_end": 28,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_a9d14c02c7",
+    "category": "unused_import",
+    "file": "core/ai/metrics.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_feb4638fda",
+    "category": "broad_exception_log",
+    "file": "core/ai/model_discovery.py",
+    "line_start": 54,
+    "line_end": 55,
+    "description": "'except Exception' with no logging or re-raise \u2014 failures vanish silently.",
+    "severity": "low"
+  },
+  {
+    "id": "wk_7cdacb9ac3",
+    "category": "unused_import",
+    "file": "core/ai/model_discovery.py",
+    "line_start": 17,
+    "line_end": 17,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_d2313b4a25",
+    "category": "unused_import",
+    "file": "core/ai/model_selector.py",
+    "line_start": 11,
+    "line_end": 11,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_2d6b293096",
+    "category": "unused_import",
+    "file": "core/ai/prompt_optimizer.py",
+    "line_start": 12,
+    "line_end": 12,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_f93d035532",
+    "category": "duplicate_signature",
+    "file": "core/ai/prompt_optimizer.py",
+    "line_start": 19,
+    "line_end": 33,
+    "description": "Functions with identical signature and near-identical length may be duplicated logic: dedupe_imports, collapse_blank_lines. Worth a manual look before merging.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_9ef847e8c2",
+    "category": "unused_import",
+    "file": "core/ai/retry.py",
+    "line_start": 7,
+    "line_end": 7,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_bfd81038e2",
+    "category": "unused_import",
+    "file": "core/ai/router.py",
+    "line_start": 19,
+    "line_end": 19,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_a8305cbedb",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 22,
+    "line_end": 22,
+    "description": "Imported name 'AIRouter' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_bd0d320037",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 22,
+    "line_end": 22,
+    "description": "Imported name 'call_llm_text' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_6a1e3df541",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 22,
+    "line_end": 22,
+    "description": "Imported name 'call_llm_vision' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_6df7a2065f",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 22,
+    "line_end": 22,
+    "description": "Imported name 'call_llm_chat' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_63a62fdc7d",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 23,
+    "line_end": 23,
+    "description": "Imported name 'ConcreteAIRouter' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_0863d66f97",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 24,
+    "line_end": 24,
+    "description": "Imported name 'AIRouterError' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_a5fa562f3d",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 24,
+    "line_end": 24,
+    "description": "Imported name 'NoFreeModelAvailable' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_62d46e37cc",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 24,
+    "line_end": 24,
+    "description": "Imported name 'ProviderError' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_1fb2f74ede",
+    "category": "unused_import",
+    "file": "core/ai/__init__.py",
+    "line_start": 24,
+    "line_end": 24,
+    "description": "Imported name 'RateLimitedError' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_758ab035db",
+    "category": "unused_import",
+    "file": "core/ai/providers/base.py",
+    "line_start": 2,
+    "line_end": 2,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_634a529754",
+    "category": "unused_import",
+    "file": "core/ai/providers/openrouter.py",
+    "line_start": 3,
+    "line_end": 3,
+    "description": "Imported name 'annotations' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_f84a502dc7",
+    "category": "unused_import",
+    "file": "core/ai/providers/__init__.py",
+    "line_start": 1,
+    "line_end": 1,
+    "description": "Imported name 'Provider' does not appear to be used in this file.",
+    "severity": "info"
+  },
+  {
+    "id": "wk_2ad3d76887",
+    "category": "unused_import",
+    "file": "core/ai/providers/__init__.py",
+    "line_start": 2,
+    "line_end": 2,
+    "description": "Imported name 'OpenRouterProvider' does not appear to be used in this file.",
+    "severity": "info"
+  }
+]
