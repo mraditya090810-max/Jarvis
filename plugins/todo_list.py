@@ -14,23 +14,20 @@ JARVIS-specific. That's what lets whatsapp_service/handler.py import this
 exact same module directly and reuse it as the single source of truth for
 tasks, instead of building a second independent task system.
 
-Storage: a small JSON file, one task list, no external database required.
-Path resolution order:
-    1. TODO_STORAGE_PATH env var, if set (lets the WhatsApp service on a
-       cloud server point at wherever its persistent disk lives).
-    2. <project_root>/memory/todo_tasks.json (same "memory/" folder every
-       other JARVIS persistence file already lives in).
+Storage: pluggable — a local JSON file by default, or a shared Firebase
+Firestore document when TODO_STORAGE_BACKEND=firestore is set (so a
+desktop JARVIS and a separately-hosted whatsapp_service see the exact
+same tasks with no extra syncing code). See plugins/_todo_storage.py for
+the full backend selection rules.
 """
 from __future__ import annotations
 
-import json
-import os
 import re
-import sys
 import threading
 from datetime import datetime
-from pathlib import Path
 from typing import Optional
+
+from plugins import _todo_storage as _storage
 
 _LOCK = threading.Lock()
 
@@ -39,39 +36,12 @@ _LOCK = threading.Lock()
 # Storage
 # --------------------------------------------------------------------------
 
-def _project_root() -> Path:
-    if getattr(sys, "frozen", False):
-        return Path(sys.executable).parent
-    return Path(__file__).resolve().parent.parent
-
-
-def _storage_path() -> Path:
-    override = os.environ.get("TODO_STORAGE_PATH")
-    if override:
-        return Path(override).expanduser()
-    return _project_root() / "memory" / "todo_tasks.json"
-
-
 def _load() -> dict:
-    path = _storage_path()
-    if not path.exists():
-        return {"next_id": 1, "tasks": []}
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        data.setdefault("next_id", 1)
-        data.setdefault("tasks", [])
-        return data
-    except Exception:
-        # Corrupt/empty file — never crash the assistant over a bad JSON file.
-        return {"next_id": 1, "tasks": []}
+    return _storage.load()
 
 
 def _save(data: dict) -> None:
-    path = _storage_path()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
-    tmp.replace(path)  # atomic on POSIX and Windows
+    _storage.save(data)
 
 
 # --------------------------------------------------------------------------

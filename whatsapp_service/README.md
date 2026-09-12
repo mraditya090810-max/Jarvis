@@ -11,7 +11,8 @@ WhatsApp
     -> JARVIS WhatsApp Webhook        (whatsapp_service/webhook.py)
       -> JARVIS To-Do Handler         (whatsapp_service/handler.py)
         -> plugins/todo_list.py       (shared with the desktop assistant)
-          -> memory/todo_tasks.json   (persistent storage)
+          -> plugins/_todo_storage.py (pluggable: local file, or shared
+                                        Firestore — see section 8)
 ```
 
 ## 1. What was inspected in your project first
@@ -147,32 +148,83 @@ curl http://localhost:8080/health
 5. Message from a *different* number — it should be silently ignored (no
    reply, no task changes). Check the logs to confirm it was blocked.
 
-## 8. Deploy so it works remotely (PC can stay off)
+## 8. Shared cloud storage (Firestore) — so desktop JARVIS sees the same tasks
 
-Any small always-on host that can run a Python web service works —
-Render, Railway, Fly.io, a $5 VPS, etc. General steps:
+Free hosts like Render don't give free persistent disks, and even if they
+did, a file sitting on that server's disk isn't the same file your
+desktop JARVIS reads from. `plugins/_todo_storage.py` solves both
+problems at once with a second storage backend: Firebase Firestore, a
+free cloud database. Point BOTH the deployed webhook and your desktop
+JARVIS at the same Firestore project, and every add/list/complete/delete
+call — from WhatsApp or from your desktop — reads and writes the exact
+same document. No sync step, no "catch up on startup" logic needed;
+there's just one shared source of truth.
 
-1. Push this project (or at least `plugins/todo_list.py`,
-   `whatsapp_service/`, `run_whatsapp_service.py`, and `requirements.txt`)
-   to the host.
-2. Set the environment variables from step 3 in the host's dashboard
-   (not a committed `.env` file).
-3. Start command: `python run_whatsapp_service.py` (it reads `PORT` from
-   the environment automatically, so it works on hosts that assign their
-   own port).
-4. The platform gives you a permanent HTTPS URL — put
-   `https://your-app.example.com/webhook` into the Meta webhook
-   configuration (step 6), replacing the ngrok URL.
-5. Make sure `TODO_STORAGE_PATH` points at a location on **persistent**
-   disk on that host (some platforms wipe the filesystem on redeploy) —
-   e.g. a mounted volume, or point it at a small database later if you
-   outgrow a JSON file.
-6. Generate a permanent WhatsApp access token (Meta's default tokens
-   expire in 24 hours) via a System User in Business Settings, so the
-   service doesn't stop working after a day.
+**One-time Firebase setup (a few minutes):**
 
-Once deployed, the WhatsApp To-Do feature runs entirely on that server —
-your desktop JARVIS app and Windows PC can be off and it keeps working.
+1. Go to <https://console.firebase.google.com>, click **Add project**,
+   give it any name (e.g. "jarvis-todo"), and finish the wizard (you can
+   decline Google Analytics — not needed).
+2. In the left sidebar: **Build → Firestore Database → Create database**.
+   Choose any region close to you, start in **production mode**.
+3. Click the gear icon next to "Project Overview" → **Project settings**
+   → **Service accounts** tab → **Generate new private key**. This
+   downloads a `.json` file — this is your `FIREBASE_CREDENTIALS_JSON`.
+   Keep it secret (it's a full-access key to this database) and never
+   commit it to git.
+4. Install the one new dependency: `pip install firebase-admin` (already
+   added to `requirements.txt`).
+
+**Wire it up in two places:**
+
+- **On the cloud host** (see deploy steps below): set
+  `TODO_STORAGE_BACKEND=firestore` and `FIREBASE_CREDENTIALS_JSON` to the
+  entire contents of that downloaded `.json` file, pasted as one line, in
+  the host's environment-variables dashboard.
+- **On your desktop PC**: set the same two environment variables before
+  running JARVIS (e.g. in a `.env` your desktop startup already loads, or
+  Windows "Edit environment variables for your account"). Easiest is to
+  set `FIREBASE_CREDENTIALS_PATH` instead of the `_JSON` version — just
+  save the downloaded key file locally (e.g.
+  `config/firebase_key.json`) and point `FIREBASE_CREDENTIALS_PATH` at
+  it, so you don't have to paste the whole JSON blob into a Windows env
+  var box. Add that file to `.gitignore`.
+
+If you skip this step entirely, everything still works exactly as before
+— `TODO_STORAGE_BACKEND` defaults to `"file"`, i.e. the original local
+`memory/todo_tasks.json` behaviour, untouched.
+
+## 9. Deploy the webhook to Render (free, always-on, PC can stay off)
+
+1. Push this project to a GitHub repo (private is fine).
+2. Go to <https://render.com>, sign up/log in, **New → Web Service**,
+   connect that repo.
+3. Settings:
+   - **Runtime**: Python 3
+   - **Build command**: `pip install -r requirements.txt`
+   - **Start command**: `python run_whatsapp_service.py`
+   - **Instance type**: Free
+4. Under **Environment**, add every variable from step 3 above
+   (`WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`,
+   `WHATSAPP_VERIFY_TOKEN`, `AUTHORIZED_WHATSAPP_NUMBER`) plus
+   `TODO_STORAGE_BACKEND=firestore` and `FIREBASE_CREDENTIALS_JSON` (the
+   whole key file, one line) from step 8.
+5. Click **Create Web Service**. Render builds it and gives you a
+   permanent URL like `https://jarvis-todo.onrender.com`.
+6. Back in Meta App Dashboard → WhatsApp → Configuration, set the
+   **Callback URL** to `https://jarvis-todo.onrender.com/webhook` (no
+   more ngrok needed) and **Verify and Save**.
+7. Generate a **permanent** WhatsApp access token (Meta's default tokens
+   expire in 24 hours) via a System User in Business Settings, and update
+   `WHATSAPP_ACCESS_TOKEN` on Render with it — otherwise the service
+   quietly stops working after a day.
+
+That's it — text your JARVIS WhatsApp number any time, PC on or off, and
+the task is there next time you open desktop JARVIS too (once step 8's
+env vars are set on your desktop). Note: Render's free tier spins the
+service down after 15 minutes idle and wakes it back up on the next
+message (a few seconds' delay on the first message after a quiet
+stretch) — normal, not a bug.
 
 ## 9. Notes and limitations
 
@@ -184,11 +236,11 @@ your desktop JARVIS app and Windows PC can be off and it keeps working.
   based understanding later, `core/llm_client.py` (already in this
   project) can be called from `whatsapp_service/nlu.py` — the rest of the
   pipeline (`handler.py`, `webhook.py`) doesn't need to change.
-- **Desktop + WhatsApp share the same task list only if they share the
-  same `todo_tasks.json`.** By default each machine has its own file. If
-  you want your desktop JARVIS and the cloud webhook to see the exact
-  same tasks, point both at the same file/network path via
-  `TODO_STORAGE_PATH`, or sync that file between them.
+- **Desktop + WhatsApp share the same task list only if configured to.**
+  By default both use their own local `todo_tasks.json` (fine for
+  desktop-only use). To have your desktop JARVIS and the cloud webhook
+  see the exact same tasks, set `TODO_STORAGE_BACKEND=firestore` on both
+  — see section 8.
 - Unauthorized senders are **silently ignored** (no reply at all) rather
   than told they're blocked, so the assistant's existence isn't revealed
   to unknown numbers.

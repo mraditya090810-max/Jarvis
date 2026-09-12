@@ -55,12 +55,51 @@ async def receive_message(request: Request, background_tasks: BackgroundTasks) -
         for entry in payload.get("entry", []):
             for change in entry.get("changes", []):
                 value = change.get("value", {})
+
+                if _is_meta_test_event(value):
+                    # Meta's Dashboard "Test" button sends a fixed synthetic
+                    # payload for documentation/testing purposes — see
+                    # _is_meta_test_event's docstring for how we detect it.
+                    # We must NOT run this through the normal handler:
+                    # handler.handle_incoming_message() would try to send a
+                    # real WhatsApp reply to Meta's dummy sender, which Meta
+                    # always rejects with error 131030 ("Recipient phone
+                    # number not in allowed list") since that sender was
+                    # never one of your real, allowed test recipients.
+                    logger.info(
+                        "Received Meta test webhook successfully "
+                        "(synthetic dashboard test event — no reply sent)."
+                    )
+                    continue
+
                 for message in value.get("messages", []):
                     _dispatch_message(message, background_tasks)
     except Exception:
         logger.exception("Failed to parse incoming WhatsApp payload: %r", payload)
 
     return Response(status_code=200)
+
+
+def _is_meta_test_event(value: dict) -> bool:
+    """True for the synthetic payload Meta's App Dashboard sends when you
+    click the "Test" button next to the `messages` webhook field.
+
+    That payload's `metadata.phone_number_id` is always a fixed dummy
+    value ("123456123" as of this writing) — never your real, configured
+    WHATSAPP_PHONE_NUMBER_ID, because it isn't actually routed through
+    your real WhatsApp business phone number at all. A genuine inbound
+    message, by contrast, always carries metadata.phone_number_id equal
+    to your real number, since that's the number that received it.
+
+    We key off that mismatch rather than Meta's example sender number
+    (16315551181) on purpose: it's the actual structural reason the two
+    cases differ, it can't accidentally flag a real message from an
+    unexpected contact, and it keeps working even if Meta ever changes
+    the placeholder sender number in their example payload.
+    """
+    incoming_phone_number_id = value.get("metadata", {}).get("phone_number_id", "")
+    return bool(incoming_phone_number_id) and bool(config.WHATSAPP_PHONE_NUMBER_ID) \
+        and incoming_phone_number_id != config.WHATSAPP_PHONE_NUMBER_ID
 
 
 def _dispatch_message(message: dict, background_tasks: BackgroundTasks) -> None:

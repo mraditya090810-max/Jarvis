@@ -1,5 +1,5 @@
 {
-  "next_id": 9,
+  "next_id": 8,
   "tasks": [
     {
       "id": 1,
@@ -39,14 +39,6 @@
       "due": null,
       "completed": false,
       "created_at": "2026-09-12T00:02:49",
-      "completed_at": null
-    },
-    {
-      "id": 8,
-      "description": "Firebase connection test",
-      "due": null,
-      "completed": false,
-      "created_at": "2026-09-12T22:51:33",
       "completed_at": null
     }
   ]
