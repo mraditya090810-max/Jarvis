@@ -9,6 +9,7 @@ optional; sane defaults are used if it's absent.
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -53,11 +54,16 @@ def _load_json(path: Path) -> dict:
 
 def get_openrouter_api_key() -> str:
     """
-    Returns the OpenRouter API key, or "" if not configured.
-    An empty key still allows /models discovery (public endpoint) but chat
-    completion calls will fail — the router surfaces that as ProviderError,
-    which the fallback chain treats like any other per-model failure.
+    Returns the OpenRouter API key.
+
+    Priority:
+    1. OPENROUTER_API_KEY environment variable for cloud deployments
+    2. config/api_keys.json for local development
     """
+    env_key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    if env_key:
+        return env_key
+
     data = _load_json(API_KEYS_PATH)
     return (data.get("openrouter_api_key") or "").strip()
 
