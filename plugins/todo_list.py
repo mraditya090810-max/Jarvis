@@ -2,7 +2,7 @@
 plugins/todo_list.py — JARVIS persistent To-Do List plugin.
 
 Shared by desktop JARVIS, WhatsApp, Telegram, and other interfaces.
-Storage is a JSON file under memory/ unless TODO_STORAGE_PATH is set.
+Storage is provided by plugins/_todo_storage.py and can use either local JSON or shared Firestore.
 """
 from __future__ import annotations
 
@@ -15,6 +15,8 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+from plugins import _todo_storage
+
 _LOCK = threading.Lock()
 
 
@@ -22,53 +24,12 @@ _LOCK = threading.Lock()
 # Storage
 # --------------------------------------------------------------------------
 
-def _project_root() -> Path:
-    if getattr(sys, "frozen", False):
-        return Path(sys.executable).parent
-    return Path(__file__).resolve().parent.parent
-
-
-def _storage_path() -> Path:
-    override = os.environ.get("TODO_STORAGE_PATH")
-    if override:
-        return Path(override).expanduser()
-    return _project_root() / "memory" / "todo_tasks.json"
-
-
 def _load() -> dict:
-    path = _storage_path()
-
-    if not path.exists():
-        return {"next_id": 1, "tasks": []}
-
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-
-        if not isinstance(data, dict):
-            return {"next_id": 1, "tasks": []}
-
-        data.setdefault("next_id", 1)
-        data.setdefault("tasks", [])
-
-        if not isinstance(data["tasks"], list):
-            data["tasks"] = []
-
-        return data
-
-    except Exception:
-        return {"next_id": 1, "tasks": []}
+    return _todo_storage.load()
 
 
 def _save(data: dict) -> None:
-    path = _storage_path()
-    path.parent.mkdir(parents=True, exist_ok=True)
-
-    tmp = path.with_suffix(".tmp")
-    tmp.write_text(
-        json.dumps(data, indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-    tmp.replace(path)
+    _todo_storage.save(data)
 
 
 # --------------------------------------------------------------------------
