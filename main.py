@@ -69,6 +69,7 @@ from memory.config_manager     import (
     get_brief_enabled, get_audio_device, save_audio_device,
 )
 from core                      import audio_devices
+from core                      import wake_word
 from core.api_errors           import is_invalid_api_key_error, is_project_access_blocked_error
 from self_engineer.orchestrator import SelfEngineer
 from core.plugin_loader        import discover_plugins
@@ -111,15 +112,31 @@ def _clean_transcript(text: str) -> str:
     text = re.sub(r"[\x00-\x08\x0b-\x1f]", "", text)
     return text.strip()
 
+# ── Rest-mode phrase detection ────────────────────────────────────────────────
+# The wake word ("jarvis") is caught locally and offline — see core/wake_word.py.
+# Going back TO rest doesn't need a second local detector: once JARVIS is awake,
+# mic audio is already flowing to Gemini as normal, so this just pattern-matches
+# Gemini's own live transcription of what you said. Deliberately loose (needs
+# "jarvis" + any rest-ish word, in any order) so it catches "Jarvis, take some
+# rest", "Jarvis go to rest mode", "okay Jarvis, that'll be all", etc. without
+# needing an exact phrase.
+_JARVIS_NAME_RE = re.compile(r"\bjarvis\b", re.IGNORECASE)
+_REST_WORD_RE   = re.compile(
+    r"\b(rest|sleep|stand\s*down|that('|\u2019)?ll\s+be\s+all|go\s+to\s+rest\s+mode)\b",
+    re.IGNORECASE,
+)
+
+
+def _is_rest_command(text: str) -> bool:
+    return bool(text) and bool(_JARVIS_NAME_RE.search(text)) and bool(_REST_WORD_RE.search(text))
+
 TOOL_DECLARATIONS = [
     {
         "name": "open_app",
         "description": (
-            "Opens any INSTALLED APPLICATION on the computer (e.g. Chrome, Spotify, WhatsApp, Notepad). "
-            "Use this whenever the user asks to open, launch, or start an app, "
-            "website, or program. Always call this tool for apps — never just say you opened it. "
-            "Do NOT use this for a folder or a file on disk (e.g. 'open my Downloads folder', "
-            "'open report.pdf', 'open this file') — use file_controller's 'open'/'read' action for those instead."
+            "Opens any application on the computer. "
+            "Use this whenever the user asks to open, launch, or start any app, "
+            "website, or program. Always call this tool — never just say you opened it."
         ),
         "parameters": {
             "type": "OBJECT",
@@ -331,9 +348,6 @@ TOOL_DECLARATIONS = [
                         "dark_mode | toggle_wifi | restart | shutdown | type_text | press_key | "
                         "reload_n | is_running | check_permissions. "
                         "For volume_set, put the 0-100 number in 'value'. "
-                        "For file_explorer with a specific folder named by the user, prefer "
-                        "file_controller's 'open' action instead — only use file_explorer here for a "
-                        "bare 'open file explorer' with no folder named. "
                         "If truly unsure which action fits, leave 'action' empty and put the "
                         "user's request in 'description' instead — a fallback detector will map it."
                     ),
@@ -383,16 +397,7 @@ TOOL_DECLARATIONS = [
     },
     {
         "name": "file_controller",
-        "description": (
-            "THE ONLY tool for folder and file operations on disk: open a folder, open/read a file, "
-            "create a folder, create a file, list a folder's contents, find/search for a file by name "
-            "or extension, rename, move, copy, delete, compress, extract, disk usage, largest files, "
-            "organize desktop. Use this for 'open this folder', 'open [X] folder', 'open this file', "
-            "'create a folder', 'find/search for a file', 'rename', 'move', 'copy', 'delete'. "
-            "Do NOT use open_app (that's for installed applications) or computer_settings' "
-            "file_explorer action (that opens a blank Explorer window, ignoring any specific folder) "
-            "for these — always use file_controller instead."
-        ),
+        "description": "Manages files and folders: list, create, delete, move, copy, rename, read, write, find, disk usage.",
         "parameters": {
             "type": "OBJECT",
             "properties": {
@@ -727,6 +732,22 @@ class JarvisLive:
         self._screen_watch_active  = False   # continuous screen-share mode
         self._screen_watch_task: asyncio.Task | None = None
         self._interrupted          = False   # True while draining audio after user interrupt
+
+        # ── Wake word / rest mode ────────────────────────────────────────
+        # Starts awake (matches the old always-on behaviour) so a first-time
+        # user isn't confused by silence. Say "Jarvis, take some rest" /
+        # "go to rest mode" to put it to sleep; say "Jarvis" (or "Jarvis
+        # wake up") to bring it back. While resting, mic audio is NOT sent
+        # to Gemini at all — only the local wake-word detector below sees it.
+        self._awake            = True
+        self._wake_detector    = wake_word.WakeWordDetector(BASE_DIR)
+        if not self._wake_detector.available:
+            print(f"[JARVIS] ⚠️ {self._wake_detector.reason}")
+            # Logged to the on-screen activity panel too, once, after the UI
+            # callbacks below are wired up (see the end of __init__).
+            self._wake_word_warning = self._wake_detector.reason
+        else:
+            self._wake_word_warning = None
         self._resumption_handle: str | None = None  # Live API session-resumption handle —
                                                       # MUST survive reconnects; this is what
                                                       # lets a fresh WebSocket resume the SAME
@@ -780,6 +801,9 @@ class JarvisLive:
         self.plugins = discover_plugins(
             BASE_DIR / "plugins", self._core_tool_names, logger=self._log_plugin,
         )
+
+        if self._wake_word_warning:
+            self.ui.write_log(f"SYS: {self._wake_word_warning}")
 
     def _log_plugin(self, message: str) -> None:
         print(f"[Plugins] {message}")
@@ -878,7 +902,37 @@ class JarvisLive:
         if value:
             self.ui.set_state("SPEAKING")
         elif not self.ui.muted:
-            self.ui.set_state("LISTENING")
+            self.ui.set_state("LISTENING" if self._awake else "RESTING")
+
+    def _on_wake_detected(self) -> None:
+        """Runs on the asyncio loop (scheduled from the mic callback thread).
+        Flips JARVIS awake and gives a short spoken acknowledgement so the
+        person knows it heard them, instead of just silently starting to
+        listen properly."""
+        self.ui.write_log("SYS: Wake word heard — listening.")
+        self.ui.set_state("LISTENING")
+        if self.session:
+            asyncio.ensure_future(self._send_wake_greeting())
+
+    async def _send_wake_greeting(self) -> None:
+        try:
+            await self.session.send_client_content(
+                turns={"parts": [{
+                    "text": (
+                        "(System note: the user just said your wake word. "
+                        "Acknowledge in ONE short sentence, e.g. 'Yes?' or "
+                        "'I'm listening.' Nothing else.)"
+                    )
+                }]},
+                turn_complete=True,
+            )
+        except Exception as e:
+            print(f"[JARVIS] Wake greeting failed: {e}")
+
+    def _go_to_rest(self) -> None:
+        self._awake = False
+        self.ui.write_log("SYS: Going to rest — say \"Jarvis\" to wake me up.")
+        self.ui.set_state("RESTING")
 
     def interrupt(self) -> None:
         """Stop JARVIS mid-speech: drain queued audio and open mic immediately."""
@@ -1052,6 +1106,22 @@ class JarvisLive:
                         voice_name="Charon"
                     )
                 )
+            ),
+            # Fixes the single biggest cause of "JARVIS isn't responding":
+            # with the SDK's defaults, the server's voice-activity detector
+            # sometimes waits too long to decide you've stopped talking (or
+            # doesn't trigger at all on a quiet mic / soft voice), so the
+            # turn never completes and JARVIS just... doesn't answer. Turning
+            # sensitivity up and shortening the silence window makes it both
+            # start and end turns much more reliably.
+            realtime_input_config=types.RealtimeInputConfig(
+                automatic_activity_detection=types.AutomaticActivityDetection(
+                    disabled=False,
+                    start_of_speech_sensitivity=types.StartSensitivity.START_SENSITIVITY_HIGH,
+                    end_of_speech_sensitivity=types.EndSensitivity.END_SENSITIVITY_HIGH,
+                    prefix_padding_ms=20,
+                    silence_duration_ms=500,
+                ),
             ),
         )
 
@@ -1443,31 +1513,64 @@ class JarvisLive:
         loop = asyncio.get_event_loop()
 
         def callback(indata, frames, time_info, status):
+            # Local wake-word check happens BEFORE anything is sent anywhere —
+            # while resting, no audio leaves this machine. Only runs while
+            # asleep; once awake there's nothing left for it to detect.
+            if not self._awake and self._wake_detector.available:
+                if self._wake_detector.feed(indata[:, 0]):
+                    self._awake = True
+                    loop.call_soon_threadsafe(self._on_wake_detected)
+
             with self._speaking_lock:
                 jarvis_speaking = self._is_speaking
-            if not jarvis_speaking and not self.ui.muted and not self._phone_active:
+            if (
+                not jarvis_speaking
+                and not self.ui.muted
+                and not self._phone_active
+                and self._awake
+            ):
                 data = indata.tobytes()
                 loop.call_soon_threadsafe(
                     self.out_queue.put_nowait,
                     {"data": data, "mime_type": "audio/pcm"}
                 )
 
-        try:
-            _in_device = audio_devices.resolve(get_audio_device("input"), "input")
-            with sd.InputStream(
-                samplerate=SEND_SAMPLE_RATE,
-                channels=CHANNELS,
-                dtype="int16",
-                blocksize=CHUNK_SIZE,
-                device=_in_device,
-                callback=callback,
-            ):
-                print("[JARVIS] 🎤 Mic stream open")
-                while True:
-                    await asyncio.sleep(0.1)
-        except Exception as e:
-            print(f"[JARVIS] ❌ Mic: {e}")
-            raise
+        # Mic device open is retried in place instead of letting a transient
+        # failure (device busy, unplugged, driver hiccup) tear down the whole
+        # Gemini Live session and force a full reconnect — that reconnect is
+        # itself a common cause of "JARVIS stopped responding" reports, since
+        # it drops the in-flight turn and takes several seconds to recover.
+        _attempt = 0
+        while True:
+            try:
+                _in_device = audio_devices.resolve(get_audio_device("input"), "input")
+                with sd.InputStream(
+                    samplerate=SEND_SAMPLE_RATE,
+                    channels=CHANNELS,
+                    dtype="int16",
+                    blocksize=CHUNK_SIZE,
+                    device=_in_device,
+                    callback=callback,
+                ):
+                    print("[JARVIS] 🎤 Mic stream open")
+                    _attempt = 0
+                    while True:
+                        await asyncio.sleep(0.1)
+            except (asyncio.CancelledError, KeyboardInterrupt):
+                raise
+            except Exception as e:
+                _attempt += 1
+                delay = min(2 * _attempt, 10)
+                print(f"[JARVIS] ❌ Mic error ({e}) — retrying in {delay}s (attempt {_attempt})")
+                if _attempt == 1:
+                    self.ui.write_log(f"ERR: Microphone problem ({e}) — retrying...")
+                elif _attempt == 5:
+                    self.ui.write_log(
+                        "ERR: Microphone still failing after several attempts — "
+                        "check it's plugged in and not in use by another app, "
+                        "or pick a different one in Audio Devices settings."
+                    )
+                await asyncio.sleep(delay)
 
     async def _receive_audio(self):
         print("[JARVIS] 👂 Recv started")
@@ -1542,6 +1645,17 @@ class JarvisLive:
                                         "ts": datetime.now().isoformat(),
                                     }))
                             in_buf = []
+
+                            # Rest-mode trigger. Only honoured if the local wake
+                            # detector is actually available — without it there
+                            # would be no way to wake JARVIS back up afterwards.
+                            if (
+                                full_in
+                                and self._awake
+                                and self._wake_detector.available
+                                and _is_rest_command(full_in)
+                            ):
+                                self._go_to_rest()
 
                             full_out = " ".join(out_buf).strip()
                             if full_out:
@@ -1818,7 +1932,7 @@ class JarvisLive:
             self._phone_active = True   # phone is streaming — silence PC mic
             with self._speaking_lock:
                 speaking = self._is_speaking
-            if not speaking and not self.ui.muted:
+            if not speaking and not self.ui.muted and self._awake:
                 try:
                     self.out_queue.put_nowait(chunk)
                 except asyncio.QueueFull:
@@ -1921,7 +2035,7 @@ class JarvisLive:
                     self._interrupted          = False
 
                     print("[JARVIS] Connected.")
-                    self.ui.set_state("LISTENING")
+                    self.ui.set_state("LISTENING" if self._awake else "RESTING")
                     # Only announce a fresh boot on the very first connect of the
                     # process. Every later (re)connect that carries a resumption
                     # handle is continuing the SAME conversation — surfacing
