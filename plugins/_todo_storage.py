@@ -56,6 +56,20 @@ import sys
 import threading
 from pathlib import Path
 
+# Load the root JARVIS .env so this storage module works correctly
+# even when it is imported directly by a standalone service.
+try:
+    from dotenv import load_dotenv
+
+    _ROOT_DIR = Path(__file__).resolve().parent.parent
+    _ROOT_ENV = _ROOT_DIR / ".env"
+
+    if _ROOT_ENV.exists():
+        load_dotenv(_ROOT_ENV, override=False)
+except ImportError:
+    pass
+
+
 _LOCK = threading.Lock()
 _firestore_client = None  # lazy singleton, one per process
 
