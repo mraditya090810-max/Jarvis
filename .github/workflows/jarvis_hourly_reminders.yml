@@ -1,0 +1,32 @@
+name: JARVIS hourly Telegram reminders
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONPATH: .
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      AUTHORIZED_TELEGRAM_USER_ID: ${{ secrets.AUTHORIZED_TELEGRAM_USER_ID }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      TODO_STORAGE_BACKEND: firestore
+      FIREBASE_CREDENTIALS_JSON: ${{ secrets.FIREBASE_CREDENTIALS_JSON }}
+      FIRESTORE_COLLECTION: jarvis
+      FIRESTORE_DOCUMENT: todo_tasks
+      JARVIS_TIMEZONE: Asia/Kolkata
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install reminder dependencies
+        run: python -m pip install --disable-pip-version-check -q firebase-admin requests python-dotenv
+      - name: Send reminder if due
+        run: python -m telegram_service.reminder_worker
